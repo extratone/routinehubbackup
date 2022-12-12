@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" class="shortcut">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Retrieve live NPR program information with Siri Shortcuts.">
+<meta property="og:url" content="/shortcut/12143/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="RoutineHub - What’s on NPR?" />
+<meta property="og:description" content="Retrieve live NPR program information with Siri Shortcuts." />
+<meta property="og:image" content="https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/ee92c9d4f2014285b8b561276b59d000.webp" />
+<meta name="twitter:card" content="summary" />
+<title>RoutineHub • What’s on NPR?</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono&display=swap" rel="stylesheet">
+<link href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/shortcut-icons/ios12-glyphs.png">
+<link href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/shortcut-icons/ios13-glyphs.png">
+<link href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/shortcut-icons/ios14-glyphs.png">
+<link href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/shortcut-icons/ios15-glyphs.png">
+<link rel="stylesheet" type="text/css" href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/main.37.css" />
+<link rel="stylesheet" type="text/css" href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/fancybox/jquery.fancybox.min.css" />
+</head>
+<body>
+<div class="message pop-up">
+<div class="message-header">
+<p class="message-title"></p>
+<button class="delete" aria-label="delete"></button>
+</div>
+<div class="message-body"></div>
+</div>
+<section id="content" class="section">
+<div class="container">
+<article class="media shortcut-header">
+<figure class="media-left">
+<div class="shortcut-icon s64 
+								ios15 
+								c4292093695 
+								g61480">
+</div>
+</figure>
+<div class="media-content">
+<div class="content">
+<div class="titles">
+<h3 class="title is-3">What’s on NPR?</h3>
+<h4 class="subtitle is-4">Retrieve live NPR program information with Siri Shortcuts.</h4>
+</div>
+</div>
+</article>
+<hr>
+<div class="columns">
+<div class="column sidebar is-2">
+<div class="actions">
+<a href="https://www.icloud.com/shortcuts/ee92c9d4f2014285b8b561276b59d000" class="button is-dark is-fullwidth">Get Shortcut</a>
+</div>
+<br>
+<div class="heart has-text-centered" data-id="12143">
+<span class="heart-icon ">
+♥️
+</span>
+<span class="heart-count">1</span>
+</div>
+<br>
+<br>
+<p class="is-size-5"><strong>Information</strong></p>
+<div class="information">
+<p>Author:
+<a href="https://routinehub.co/user/blue"><strong>@blue</strong></a>
+<a href="/membership/">
+<span class="tag is-primary">Member</span>
+</a>
+<p>Version: 1.0</p>
+<p>iOS: 15</p>
+<p>Updated: 06/06/22</p>
+<p>Downloads: 59</p>
+<p>Categories:</p>
+<ul class="fa-ul">
+<li>
+<a href="https://routinehub.co/category/music/">
+<span class="fa-li">
+<i class="fas fa-music"></i>
+</span>
+Music
+</a>
+</li>
+<li>
+<a href="https://routinehub.co/category/utilities/">
+<span class="fa-li">
+<i class="fas fa-calculator"></i>
+</span>
+Utilities
+</a>
+</li>
+</ul>
+</div>
+<hr>
+<div class="qr-code has-text-centered is-hidden-mobile">
+<img src="https://api.qrserver.com/v1/create-qr-code/?data=https://routinehub.cohttps://www.icloud.com/shortcuts/ee92c9d4f2014285b8b561276b59d000" alt="QR Code for downloading What’s on NPR?" />
+<p class="is-size-7"><em>Scan using your iPhone's camera to download</em></p>
+</div>
+</div>
+<div class="column is-10 details">
+<div class="description">
+<h4 class="title is-4">Description</h4>
+<div class="content">
+<p><img alt="What's on NPR? Banner" src="https://i.snap.as/SsekiEOI.png"></p>
+<p>For more information, please see <a href="https://bilge.world/npr-siri-shortcuts"><strong>my blog post about this shortcut</strong></a>.</p>
+<h2>Creating a Shortcut for <em>Your</em> NPR Station</h2>
+<p>All I really needed to customize Jack Wellborn's original shortcut was my NPR station's "UCSID,"which, for reference, is <code>5387648fe1c8335046a1d4b4</code>. Upon installation of my <strong>What's on NPR?</strong> shortcut, you'll be prompted to specify this. Unfortunately, retrieving it via NPR's API requires special authorization, for some reason, but - since we're retrieving data from an NPR station's playback widget already configured to use the API - it's actually as easy as opening your browser's "Dev Tools" or showing on your given station's homepage. If you're unfamiliar, <a href="https://balsamiq.com/support/faqs/browserconsole/">here's a handy guide</a> to doing so on some popular desktop web browsers.</p>
+<p>&lt;center&gt;<a href="https://apps.apple.com/us/app/web-inspector/id1584825745"><img alt="Web Inspector" src="https://i.snap.as/6dahYnnY.png"></a>&lt;/center&gt;</p>
+<p>Honestly, though, if you're already on your iOS/iPadOS device and you're willing to install a single, free Safari Extension, I believe you'll find <a href="https://apps.apple.com/us/app/web-inspector/id1584825745">Web Inspector</a> to be the single, simplest method of retrieving your station's UCSID.</p>
+<p><img alt="Finding UCSID-Web Inspector" src="https://i.snap.as/r1VgmbNv.png"></p>
+<h3>Finding your station's UCSID with Web Inspector</h3>
+<ol>
+<li>Navigate to your station's homepage (ex. <code>kbia.org</code>.)</li>
+<li>Start playback of the live stream you'd like to query (may or may not be necessary, depending.)</li>
+<li>Open Web Inspector via the <a href="https://i.snap.as/2632HFBC.png">Safari Extensions Menu</a>.</li>
+<li>In the <code>DOM</code> tab, use the search icon to filter for <code>ucsid</code>.</li>
+<li>Your station's UCSID is the value for the <code>data-stream-ucsid</code> field.</li>
+</ol>
+<p>Depending on how modern your station's website is (I think - I'm supposing, here,) you may or may not find this field. For reference, <a href="https://tilde.town/~extratone/shortcuts/kbia/example.txt">here is the HTML source of KBIA's webpage</a> from which I drew in its entirety. If you're having trouble, please feel free to <a href="https://davidblue.wtf/db.vcf">contact me</a> however you wish, ideally with your preferred station's identifier/web url.</p>
+<p>&lt;center&gt;<a href="https://apps.apple.com/us/app/broadcasts/id1469995354"><img alt="Broadcasts" src="https://i.snap.as/e68mJ9cQ.png"></a>&lt;/center&gt;</p>
+<h3>"Integration" with the Broadcasts app</h3>
+<p><a href="https://apps.apple.com/us/app/broadcasts/id1469995354"><strong>Broadcasts</strong></a> is a very popular and highly-praised universal Apple application for internet radio streaming. By default, my What's on NPR? shortcut includes an action to begin streaming a station in Broadcasts, but it requires further configuration.</p>
+<p><img alt="Broadcasts App Integration" src="https://i.snap.as/eTkiNc6O.png"></p>
+<p>In all likelihood, a search of the <a href="https://i.snap.as/OvItUZSE.png">Broadcasts Directory</a> for your station's four-letter identifier should yield results. Once you've added your station to your library in Broadcasts, hold its icon (or <code>^ Tap</code>) to present the context menu (shown in the screenshots embedded above) and select <code>Edit</code>. The exact value for the <code>Name</code> field in configuration menu that results must be supplied as the answer to the second configuration step of my What's on NPR? shortcut. If you do not wish to use Broadcasts, you need only delete or replace its single action in the shortcut's default configuration.</p>
+<p>If you've followed along this far, you now have both values you're prompted for at installation of said shortcut, by default: your station's <code>ucsid</code> and its name in the Broadcasts app. You need only continue if you'd prefer to add options for <a href="https://apps.apple.com/us/app/apple-music/id1108187390">Apple Music</a> and/or <a href="https://apps.apple.com/us/app/vlc-media-player/id650377962">VLC</a>.</p>
+<p><img alt="Finding an NPR Station's Apple Music URL" src="https://i.snap.as/jeNMtNgs.png"></p>
+<h3>"Integration" with Apple Music</h3>
+<p>If you'd like to have a menu option to begin streaming your NPR station in Apple Music, begin by searching within the app for your station's identifier (as shown in the screenshot embedded above.) Use the triple-dot menu's <code>Share Station</code> option to copy its Apple Music URL. (WBEZ's, for example, is <code>https://music.apple.com/us/station/npr-news-wbez-chicago/ra.872998937</code>.) Replace or append to the Broadcasts option with a menu option pointing to an <a href="https://www.matthewcassinelli.com/actions/open-urls/">Open URLs</a> action containing the resulting URL. (Refer to <a href="https://www.icloud.com/shortcuts/04ec61d2f057497bba899eb434b3da07">my What's on KBIA? shortcut</a> to see this implemented.)</p>
+<p>&lt;center&gt;<a href="https://apps.apple.com/us/app/vlc-media-player/id650377962"><img alt="VLC" src="https://i.snap.as/RZYRoIw8.png"></a>&lt;/center&gt;</p>
+<h3>"Integration" with VLC media player</h3>
+<p>The <a href="https://apps.apple.com/us/app/vlc-media-player/id650377962"><strong>VLC media player</strong></a> iOS app does not yet have its own Siri Shortcuts actions, but it <em>does</em> have a handy URL scheme which allows one to stream or download the contents of any raw media URL. Using Web Inspector as described above, I was able to find the raw stream URL for KBIA (<code>https://playerservices.streamtheworld.com/api/livestream-redirect/KBIAFM.mp3</code>) quite quickly in the <code>Resources</code> tab whilst streaming live.</p>
+<p><img alt="Finding Raw Stream URL-Web Inspector" src="https://i.snap.as/R5o3kda5.png"></p>
+<p>To add an option to my shortcut to open the stream in vlc, I would add the following value in an Open URLs action: </p>
+<pre><code>vlc-x-callback://x-callback-url/stream?url=https://playerservices.streamtheworld.com/api/livestream-redirect/KBIAFM.mp3
+</code></pre>
+<hr>
+<h2>Contact</h2>
+<ul>
+<li><a href="https://davidblue.wtf/db.vcf">Contact Card</a></li>
+<li><a href="https://t.me/extratone">Telegram</a></li>
+<li><a href="/cdn-cgi/l/email-protection#721613041b16101e071732170a060013061d1c175c111d1f">Email</a> </li>
+<li><a href="https://twitter.com/NeoYokel">Twitter</a></li>
+<li><a href="https://mastodon.social/@DavidBlue">Mastodon</a></li>
+<li><a href="https://discord.gg/0b9KQUKP858b0iZF">Discord</a></li>
+<li><a href="https://raindrop.io/davidblue/social-directory-21059174"><em>Everywhere</em></a>...</li>
+</ul>
+</div>
+</div>
+<hr>
+<div class="latest-release">
+<h4 class="title is-4">Latest Release Notes</h4>
+<p><strong>1.0 - June 6, 2022, 12:08 a.m.</strong></p>
+<p>Initial release.</p>
+<br>
+</div>
+<hr>
+<div class="feedback">
+<h4 class="title is-4">Feedback</h4>
+<br>
+<p>No feedback yet</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" class="shortcut">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Creates an audio file of text identified in a document read aloud by Siri (Text to Speech.)">
+<meta property="og:url" content="/shortcut/10028/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="RoutineHub - Make Audio from Document Text" />
+<meta property="og:description" content="Creates an audio file of text identified in a document read aloud by Siri (Text to Speech.)" />
+<meta property="og:image" content="https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/16031e0438254cff80a9156b04b766aa.webp" />
+<meta name="twitter:card" content="summary" />
+<title>RoutineHub • Make Audio from Document Text</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono&display=swap" rel="stylesheet">
+<link href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/shortcut-icons/ios12-glyphs.png">
+<link href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/shortcut-icons/ios13-glyphs.png">
+<link href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/shortcut-icons/ios14-glyphs.png">
+<link href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/shortcut-icons/ios15-glyphs.png">
+<link rel="stylesheet" type="text/css" href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/main.37.css" />
+<link rel="stylesheet" type="text/css" href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/fancybox/jquery.fancybox.min.css" />
+</head>
+<body>
+<div class="message pop-up">
+<div class="message-header">
+<p class="message-title"></p>
+<button class="delete" aria-label="delete"></button>
+</div>
+<div class="message-body"></div>
+</div>
+<section id="content" class="section">
+<div class="container">
+<article class="media shortcut-header">
+<figure class="media-left">
+<div class="shortcut-icon s64 
+								ios15 
+								c4292093695 
+								g59791">
+</div>
+</figure>
+<div class="media-content">
+<div class="content">
+<div class="titles">
+<h3 class="title is-3">Make Audio from Document Text</h3>
+<h4 class="subtitle is-4">Creates an audio file of text identified in a document read aloud by Siri (Text to Speech.)</h4>
+</div>
+</div>
+</article>
+<hr>
+<div class="columns">
+<div class="column sidebar is-2">
+<div class="actions">
+<a href="https://www.icloud.com/shortcuts/16031e0438254cff80a9156b04b766aa" class="button is-dark is-fullwidth">Get Shortcut</a>
+</div>
+<br>
+<div class="heart has-text-centered" data-id="10028">
+<span class="heart-icon ">
+♥️
+</span>
+<span class="heart-count">4</span>
+</div>
+<br>
+<br>
+<p class="is-size-5"><strong>Information</strong></p>
+<div class="information">
+<p>Author:
+<a href="https://routinehub.co/user/blue"><strong>@blue</strong></a>
+<a href="/membership/">
+<span class="tag is-primary">Member</span>
+</a>
+<p>Version: 1.0</p>
+<p>iOS: 15</p>
+<p>Updated: 08/30/21</p>
+<p>Downloads: 116</p>
+<p>Categories:</p>
+<ul class="fa-ul">
+<li>
+<a href="https://routinehub.co/category/productivity/">
+<span class="fa-li">
+<i class="fas fa-paperclip"></i>
+</span>
+Productivity
+</a>
+</li>
+<li>
+<a href="https://routinehub.co/category/utilities/">
+<span class="fa-li">
+<i class="fas fa-calculator"></i>
+</span>
+Utilities
+</a>
+</li>
+</ul>
+</div>
+<hr>
+<div class="qr-code has-text-centered is-hidden-mobile">
+<img src="https://api.qrserver.com/v1/create-qr-code/?data=https://routinehub.cohttps://www.icloud.com/shortcuts/16031e0438254cff80a9156b04b766aa" alt="QR Code for downloading Make Audio from Document Text" />
+<p class="is-size-7"><em>Scan using your iPhone's camera to download</em></p>
+</div>
+</div>
+<div class="column is-10 details">
+<div class="description">
+<h4 class="title is-4">Description</h4>
+<div class="content">
+<p><img alt="Siri TTS" src="https://i.snap.as/13BtYmx0.png"></p>
+<h2>About</h2>
+<p><strong>Note: this shortcut requires iOS 15 Developer or Public Beta 6</strong></p>
+<p>This shortcut utilizes 4 new Actions coming with iOS 15. The first - “<strong>Extract Text From Image</strong>” - is used to transcribe the text present in a given file/document via OCR. </p>
+<p>According to the Action’s description, it is capable of reading text from the following input types:</p>
+<blockquote>
+<p>Evernote notes, App Store apps, Bar codes, Images, Podcasts, Rich text, iTunes products, Giphy items, Podcast episodes, PDFs, iTunes media, Media, Contacts, Photo media, Shazam media, Locations, iTunes artists</p>
+</blockquote>
+<p>This shortcut is primarily configured for PDF input, but obviously, your particular needs should be customized for.</p>
+<p>Because the output of <code>Extract Text From Image</code> is a list of single lines, this shortcut uses <code>Combine Text</code> to convert them to single spaces, the result of which is particularly suited for Siri to read.</p>
+<p>The plain text result is then passed to “Make Audio From Text” (the second) action arriving in iOS 15 (which has finally been fixed as of Developer Beta 6) to generate an .m4a audio file of Siri Voice 2 (by default) reading the document’s text aloud (rather than just speaking it aloud on your handset/iPad, as the original does.)</p>
+<p>The 3rd and 4th new actions are used to capture and crop a 1000 x 1000 thumbnail image of the inputted document for use as the output file’s cover art.</p>
+<p>After the raw audio has been synthesized, it is passed to an <code>Encode Media</code> action, which converts it to an .m4a file with metadata (that I highly encourage you customize.)</p>
+<p>By default, the shortcut is configured to save the .m4a file to iCloud Drive in /audio/TTS/ as [the original file’s name].m4a.</p>
+<p>A full explanation/detailed guide can be found <a href="https://bilge.world/siri-tts"><strong>on my blog</strong></a>, and the full text of the latter portion (in first draft form) has been posted beneath the contact details in <a href="https://routinehub.co/shortcut/9953">the description of a sister shortcut</a>.</p>
+<hr>
+<h2>Contact</h2>
+<ul>
+<li><a href="https://bit.ly/whoisdavidblue">Contact Card</a></li>
+<li><a href="/cdn-cgi/l/email-protection#5d393c2b34393f3128381d3825292f3c29323338733e3230">Email</a> </li>
+<li><a href="https://twitter.com/NeoYokel">Twitter</a></li>
+<li><a href="https://mastodon.social/@DavidBlue">Mastodon</a></li>
+<li><a href="https://discord.gg/0b9KQUKP858b0iZF">Discord</a></li>
+<li><a href="https://www.notion.so/rotund/9fdc8e9610b34b8f991ebc148b760055?v=c170b58650c04fbdb7adc551a73d16a7"><em>Everywhere</em></a>...</li>
+</ul>
+</div>
+</div>
+<hr>
+<div class="latest-release">
+<h4 class="title is-4">Latest Release Notes</h4>
+<p><strong>1.0 - Aug. 30, 2021, 12:46 p.m.</strong></p>
+<p>Initial release.</p>
+<br>
+</div>
+<hr>
+<div class="feedback">
+<h4 class="title is-4">Feedback</h4>
+<br>
+<p>No feedback yet</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</body>
+</html>

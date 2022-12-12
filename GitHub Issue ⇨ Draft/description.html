@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" class="shortcut">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Retrieve and concatenate GitHub Issue contents and comments into a single draft.">
+<meta property="og:url" content="/shortcut/13090/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="RoutineHub - GitHub Issue ⇨ Draft" />
+<meta property="og:description" content="Retrieve and concatenate GitHub Issue contents and comments into a single draft." />
+<meta property="og:image" content="https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/fdcbfb02bd4a4e44b6735c4af8baf721.webp" />
+<meta name="twitter:card" content="summary" />
+<title>RoutineHub • GitHub Issue ⇨ Draft</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono&display=swap" rel="stylesheet">
+<link href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/shortcut-icons/ios12-glyphs.png">
+<link href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/shortcut-icons/ios13-glyphs.png">
+<link href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/shortcut-icons/ios14-glyphs.png">
+<link href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/shortcut-icons/ios15-glyphs.png">
+<link rel="stylesheet" type="text/css" href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/main.37.css" />
+<link rel="stylesheet" type="text/css" href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/fancybox/jquery.fancybox.min.css" />
+</head>
+<body>
+<div class="message pop-up">
+<div class="message-header">
+<p class="message-title"></p>
+<button class="delete" aria-label="delete"></button>
+</div>
+<div class="message-body"></div>
+</div>
+<section id="content" class="section">
+<div class="container">
+<article class="media shortcut-header">
+<figure class="media-left">
+<div class="shortcut-icon s64 
+								ios15 
+								c4251333119 
+								g59727">
+</div>
+</figure>
+<div class="media-content">
+<div class="content">
+<div class="titles">
+<h3 class="title is-3">GitHub Issue ⇨ Draft</h3>
+<h4 class="subtitle is-4">Retrieve and concatenate GitHub Issue contents and comments into a single draft.</h4>
+</div>
+</div>
+</article>
+<hr>
+<div class="columns">
+<div class="column sidebar is-2">
+<div class="actions">
+<a href="https://www.icloud.com/shortcuts/fdcbfb02bd4a4e44b6735c4af8baf721" class="button is-dark is-fullwidth">Get Shortcut</a>
+</div>
+<br>
+<div class="heart has-text-centered" data-id="13090">
+<span class="heart-icon ">
+♥️
+</span>
+<span class="heart-count">2</span>
+</div>
+<br>
+<br>
+<p class="is-size-5"><strong>Information</strong></p>
+<div class="information">
+<p>Author:
+<a href="https://routinehub.co/user/blue"><strong>@blue</strong></a>
+<a href="/membership/">
+<span class="tag is-primary">Member</span>
+</a>
+<p>Version: 1.0</p>
+<p>iOS: 15</p>
+<p>Updated: 10/06/22</p>
+<p>Downloads: 31</p>
+<p>Categories:</p>
+<ul class="fa-ul">
+<li>
+<a href="https://routinehub.co/category/development-tools/">
+<span class="fa-li">
+<i class="fas fa-wrench"></i>
+</span>
+Development Tools
+</a>
+</li>
+<li>
+<a href="https://routinehub.co/category/productivity/">
+<span class="fa-li">
+<i class="fas fa-paperclip"></i>
+</span>
+Productivity
+</a>
+</li>
+</ul>
+</div>
+<hr>
+<p class="is-size-5"><strong>Required Apps</strong></p>
+<div class="apps columns is-mobile is-multiline">
+<div class="column is-3-mobile is-4-tablet">
+<a href="https://itunes.apple.com/us/app/id1236254471">
+<figure class="image app is-square">
+<img src="https://is4-ssl.mzstatic.com/image/thumb/Purple118/v4/28/fe/89/28fe8990-bb7b-bfee-cc25-77953c3a093f/source/60x60bb.jpg" alt="Icon for Drafts 5: Capture ‣‣ Act" title="Drafts 5: Capture ‣‣ Act">
+</figure>
+</a>
+</div>
+</div>
+<hr>
+<div class="qr-code has-text-centered is-hidden-mobile">
+<img src="https://api.qrserver.com/v1/create-qr-code/?data=https://routinehub.cohttps://www.icloud.com/shortcuts/fdcbfb02bd4a4e44b6735c4af8baf721" alt="QR Code for downloading GitHub Issue ⇨ Draft" />
+<p class="is-size-7"><em>Scan using your iPhone's camera to download</em></p>
+</div>
+</div>
+<div class="column is-10 details">
+<div class="description">
+<h4 class="title is-4">Description</h4>
+<div class="content">
+<p>See: <a href="https://davidblue.wtf/issuedraft"><strong>The Full Documentation</strong></a> </p>
+<p><a href="https://davidblue.wtf/issuedraft/source"><img alt="GitHubImage-Draft Source Render" src="https://user-images.githubusercontent.com/43663476/194393714-12912a27-3f5e-4384-a2cb-3fed9754bcda.png"></a></p>
+<p>This shortcut is yet another near-direct publication of one I made specifically for my own use cases. It uses <a href="https://docs.github.com/en/rest/issues">GitHub's REST API</a> to gather an Issue's content - of the original post as well as all of the comments - into a single markdown document, formatted very specifically for my own use. Out of the box, it's designed to store said document in <a href="https://apps.apple.com/us/app/drafts/id1236254471">Drafts</a>, but even the most novice Shortcuts users should find pointing it to any other destination with markdown/plain text support very simple. (If you need help, please don't hesitate to contact me via any of the sources at the bottom of this page.)</p>
+<h3>Setup</h3>
+<p>Upon installation, you'll be asked to provide:</p>
+<ol>
+<li>A <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token">GitHub Personal Access Token</a> (create one directly with <a href="https://github.com/settings/tokens/new">this link</a>.) This is absolutely required.</li>
+<li>Any additional <a href="https://docs.getdrafts.com/docs/drafts/tagging.html">tags</a> you'd like attached to the resulting draft <em>beyond the Issue's labels</em> (which are attached as tags by default.) These are optional.</li>
+</ol>
+<p>The shortcut is configured by default to receive Issue URLs from the <a href="https://developer.apple.com/design/human-interface-guidelines/components/menus-and-actions/activity-views/">Share Sheet</a> and/or the system clipboard. Theoretically, it should remain unaffected if one should accidentally pass an Issue <em>Comment</em> URL (ex: <code>https://github.com/mastodon/joinmastodon/issues/148#issuecomment-1114188033</code>) instead of the Issue URL (ex: <code>https://github.com/mastodon/joinmastodon/issues/148</code>,) as the <a href="https://matthewcassinelli.com/actions/get-item-from-list/">Get Item from List</a> actions which parse out the specifying information seek by index from the root.</p>
+<h3>Format</h3>
+<p>With Shortcuts variables wrapped in <code>}{</code>:</p>
+<pre><code># &quot;{title}&quot; - {owner}/{repo}
+Updated `{updated}`
+Created `{created}`
+- [**Issue**]({link})
+- @[{username}](https://github.com/{username})
+- [Repository](https://github.com/{owner}/{repo})
+- [Maintainer/Org](https://github.com/{owner})
+---
+{body}
+{commentContent1}
+ *{ref1}*
+---
+{commentContent2}
+ *{ref2}*
+---
+{commentContent3}
+ *{ref3}*
+---
+</code></pre>
+<p>Below is actual demonstrative shortcut output from <a href="https://github.com/FifiTheBulldog/ios-settings-urls/issues/10">this Issue</a> as input. You might also inspect the color-encoded markdown via <a href="https://gist.github.com/fc3d8eb9cd91b4c5a9a36527559fffcf.js">this Gist</a> and/or see how the result looks when <a href="https://davidblue.wtf/drafts/9414E08A-6DCB-433E-B9C0-3548951A58FF.html">rendered as a web page</a> using my custom Drafts HTML template.</p>
+<pre><code># &quot;Screen Time for Family Members&quot; - FifiTheBulldog/ios-settings-urls
+Updated `03302021-144840`
+Created `03302021-085525`
+- [**Issue**](https://github.com/FifiTheBulldog/ios-settings-urls/issues/10)
+- @[bcmitri](https://github.com/bcmitri)
+- [Repository](https://github.com/txt/ios-settings-urls)
+- [Maintainer/Org](https://github.com/FifiTheBulldog)
+---
+Is there any way to get to the &quot;Screen Time → See All Activity&quot; screen for family members?  I see them listed on the screen below, but haven't been able to guess a path value that works.
+What’s the exact path to get to a family member’s See All Activity screen manually? I know how to get to See All Activity for my own device, but I don’t have an iCloud family that I can test with.
+ *[※](https://github.com/FifiTheBulldog/ios-settings-urls/issues/10#issuecomment-810311207)‑[FifiTheBulldog](https://github.com/FifiTheBulldog)*
+---
+That's the part I'm struggling with.  I had assumed / hoped that the See All Activity part would be easy once I could get to the Family Member view.
+ *[※](https://github.com/FifiTheBulldog/ios-settings-urls/issues/10#issuecomment-810319059)‑[bcmitri](https://github.com/bcmitri)*
+---
+I meant, what’s the series of taps to get there? Ignoring the search for a URL for a moment.
+ *[※](https://github.com/FifiTheBulldog/ios-settings-urls/issues/10#issuecomment-810320251)‑[FifiTheBulldog](https://github.com/FifiTheBulldog)*
+---
+Oh...  It’s just the name of my family member from the main Screen Time view.
+![796139E3-AAD1-45DC-B4D2-0C20EC7B0254](https://user-images.githubusercontent.com/53234043/113008892-d65f2100-914d-11eb-9a31-85e29ff3da4a.jpeg)
+ *[※](https://github.com/FifiTheBulldog/ios-settings-urls/issues/10#issuecomment-810324148)‑[bcmitri](https://github.com/bcmitri)*
+---
+What if you URL encode the family member’s name exactly as it appears on screen there, and then use that as the path?
+ *[※](https://github.com/FifiTheBulldog/ios-settings-urls/issues/10#issuecomment-810326062)‑[FifiTheBulldog](https://github.com/FifiTheBulldog)*
+---
+To encode the name as a url, I assume I just replace the space with a %20.  Is that right?  If so, I've tried that, and it just brings me to the main Screen Time view.
+ *[※](https://github.com/FifiTheBulldog/ios-settings-urls/issues/10#issuecomment-810331841)‑[bcmitri](https://github.com/bcmitri)*
+---
+Sounds about right, assuming there’s no other characters that would need to be percent encoded.
+Are there any other identifiers that could possibly be used as paths? I’m at a loss.
+ *[※](https://github.com/FifiTheBulldog/ios-settings-urls/issues/10#issuecomment-810518796)‑[FifiTheBulldog](https://github.com/FifiTheBulldog)*
+---
+Really, there's just the screen that you see above.  Clicking my family member's name brings me to the main Screen Time view for that family member.
+No worries if you don't know the answer.  I just thought I'd ask.
+ *[※](https://github.com/FifiTheBulldog/ios-settings-urls/issues/10#issuecomment-810531554)‑[bcmitri](https://github.com/bcmitri)*
+---
+Hmm, all right. I’ll leave this issue open and hope that it gets an answer someday, since this would be a particularly useful one.
+ *[※](https://github.com/FifiTheBulldog/ios-settings-urls/issues/10#issuecomment-810532584)‑[FifiTheBulldog](https://github.com/FifiTheBulldog)*
+---
+</code></pre>
+<p>And... for the sake of thoroughness... Here's how the same example looks <em>in the Drafts app</em>:</p>
+<p><img alt="iPhone 12 Pro Max Example Frame" src="https://user-images.githubusercontent.com/43663476/194389887-949a32fc-1021-4d54-b180-d00671f4ea54.png"></p>
+<p><img alt="iPad Pro Example Frame" src="https://user-images.githubusercontent.com/43663476/194389614-52cbd6b3-2f42-4bb9-893a-4d64f537da04.png"></p>
+<p><a href="https://showcuts.app/share/view/fdcbfb02bd4a4e44b6735c4af8baf721"><img alt="Showcuts" src="https://user-images.githubusercontent.com/43663476/194391434-e47c3547-5200-48f8-8114-4df0cfda63ed.png"></a></p>
+<hr>
+<h2>Contact</h2>
+<ul>
+<li><a href="https://davidblue.wtf/db.vcf">Contact Card</a></li>
+<li><a href="https://t.me/extratone">Telegram</a></li>
+<li><a href="/cdn-cgi/l/email-protection#e88c899e818c8a849d8da88d909c9a899c87868dc68b8785">Email</a> </li>
+<li><a href="https://twitter.com/NeoYokel">Twitter</a></li>
+<li><a href="https://mastodon.social/@DavidBlue">Mastodon</a></li>
+<li><a href="https://discord.gg/0b9KQUKP858b0iZF">Discord</a></li>
+<li><a href="https://raindrop.io/davidblue/social-directory-21059174"><em>Everywhere</em></a>...</li>
+</ul>
+</div>
+</div>
+<hr>
+<div class="latest-release">
+<h4 class="title is-4">Latest Release Notes</h4>
+<p><strong>1.0 - Oct. 6, 2022, 6:50 p.m.</strong></p>
+<p>Initial release.</p>
+<br>
+</div>
+<hr>
+<div class="feedback">
+<h4 class="title is-4">Feedback</h4>
+<br>
+<p>No feedback yet</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</body>
+</html>

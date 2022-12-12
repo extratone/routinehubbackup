@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en" class="shortcut">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="JSON ⇐⇒ dictionary action conversion tool">
+<meta property="og:url" content="/shortcut/4626/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="RoutineHub - Dictionary Action Builder" />
+<meta property="og:description" content="JSON ⇐⇒ dictionary action conversion tool" />
+<meta property="og:image" content="https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/f59e832e62fb42cd9576ef6d46a45c98.webp" />
+<meta name="twitter:card" content="summary" />
+<title>RoutineHub • Dictionary Action Builder</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono&display=swap" rel="stylesheet">
+<link href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/shortcut-icons/ios12-glyphs.png">
+<link href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/shortcut-icons/ios13-glyphs.png">
+<link href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/shortcut-icons/ios14-glyphs.png">
+<link href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/shortcut-icons/ios15-glyphs.png">
+<link rel="stylesheet" type="text/css" href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/main.37.css" />
+<link rel="stylesheet" type="text/css" href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/fancybox/jquery.fancybox.min.css" />
+</head>
+<body>
+<div class="message pop-up">
+<div class="message-header">
+<p class="message-title"></p>
+<button class="delete" aria-label="delete"></button>
+</div>
+<div class="message-body"></div>
+</div>
+<section id="content" class="section">
+<div class="container">
+<article class="media shortcut-header">
+<figure class="media-left">
+<div class="shortcut-icon s64 
+								ios15 
+								c4292093695 
+								g59748">
+</div>
+</figure>
+<div class="media-content">
+<div class="content">
+<div class="titles">
+<h3 class="title is-3">Dictionary Action Builder</h3>
+<h4 class="subtitle is-4">JSON ⇐⇒ dictionary action conversion tool</h4>
+</div>
+</div>
+</article>
+<hr>
+<div class="columns">
+<div class="column sidebar is-2">
+<div class="actions">
+<a href="https://www.icloud.com/shortcuts/f59e832e62fb42cd9576ef6d46a45c98" class="button is-dark is-fullwidth">Get Shortcut</a>
+</div>
+<br>
+<div class="heart has-text-centered" data-id="4626">
+<span class="heart-icon ">
+♥️
+</span>
+<span class="heart-count">52</span>
+</div>
+<br>
+<br>
+<p class="is-size-5"><strong>Information</strong></p>
+<div class="information">
+<p>Author:
+<a href="https://routinehub.co/user/gluebyte"><strong>@gluebyte</strong></a>
+<a href="/membership/">
+<span class="tag is-primary">Member</span>
+</a>
+<p>Version: 2.2.6</p>
+<p>iOS: 15</p>
+<p>Updated: 10/13/22</p>
+<p>Downloads: 3374</p>
+<p>Categories:</p>
+<ul class="fa-ul">
+<li>
+<a href="https://routinehub.co/category/development-tools/">
+<span class="fa-li">
+<i class="fas fa-wrench"></i>
+</span>
+Development Tools
+</a>
+</li>
+</ul>
+</div>
+<hr>
+<div class="qr-code has-text-centered is-hidden-mobile">
+<img src="https://api.qrserver.com/v1/create-qr-code/?data=https://routinehub.cohttps://www.icloud.com/shortcuts/f59e832e62fb42cd9576ef6d46a45c98" alt="QR Code for downloading Dictionary Action Builder" />
+<p class="is-size-7"><em>Scan using your iPhone's camera to download</em></p>
+ </div>
+</div>
+<div class="column is-10 details">
+<div class="description">
+<h4 class="title is-4">Description</h4>
+<div class="content">
+<table>
+<thead>
+<tr>
+<th>OS</th>
+<th>Compatibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>macOS</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>iOS 15 or higher</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>iOS 14 or lower</td>
+<td>Yes, using <a href="https://routinehub.co/shortcut/9899/"><em>Shortcut Downgrader</em></a></td>
+</tr>
+</tbody>
+</table>
+<p>Please download <em><strong>Shortcut Source Helper</strong></em> (<a href="https://routinehub.co/shortcut/10060">https://&#8203;routinehub.co/&#8203;shortcut/&#8203;10060</a>) to use this shortcut.</p>
+<p><img alt="" src="https://i.imgur.com/Cy2fHwc.png"></p>
+<p><em>Dictionary Action Builder</em> converts JSON text to native dictionary or list actions and vice versa. It can also join multiple dictionary actions into one.</p>
+<h4>JSON → Dictionary Action</h4>
+<p>This shortcut helps you create complex dictionary actions in Shortcuts. You can write and test dictionaries in JSON-style text, e.g. <code>{"name":"bong","happy":true}</code>, and later use this tool to convert them to native actions, avoiding painful steps in building multi-level actions manually. </p>
+<p>Arrays, e.g. <code>["hello", "world"]</code>, can also be converted to list actions. It can convert multiple objects, e.g. <code>{} [2, 3] {"say":"hi"}</code>, at once and accepts (text, json, pdf, etc) files or text selection through a share sheet or file picker, or copied text in the clipboard.</p>
+<p><em>“Dictionaries in text form are easier to read and edit. Why convert to native actions?”</em> you may ask.</p>
+<ol>
+<li>
+<p>Native actions look cool :) but are hard to navigate and edit. Sometimes you would like to have native actions instead of messy text actions when you share your works with others. With this tool, you can continue using text dictionaries throughout your developing and testing phases.</p>
+</li>
+<li>
+<p>Dictionaries in text form do not retain the order of the key/value pairs when run. This is a pain when the order is important, for example, if you want to iterate through the keys or values in a specific order. This tool preserves the order.</p>
+</li>
+<li>
+<p>You can create dictionaries containing newline characters in keys or values.</p>
+</li>
+<li>
+<p>This tool is probably the only way to create lists with multiple-type items such as numbers, booleans and even dictionaries, e.g. <code>["text", -2.3, false, {"a":"b"}]</code>. Please be aware that a list inside a list will crash your shortcut.</p>
+</li>
+</ol>
+<h4>Dictionary Action → JSON</h4>
+<p>Select <em>Extract JSON from Shortcut</em> from the menu and it will extract all dictionary actions and multi-type list actions containing dictionaries from a shortcut, convert them to JSON and let you quick look, share, save or copy to clipboard.</p>
+<p>The main benefit of this tool over dumping JSON directly from a dictionary action is that this one preserves the key/value order, allowing you to edit and convert repeatedly.</p>
+<h4>Merging Dictionary Actions</h4>
+<p>Select <em>Merge Dictionary Actions</em> from the menu and it will merge consecutive dictionary actions in a shortcut into one. Same applies to consecutive multi-type list actions containing dictionaries. Simply put, the process is analogous to joining JSON objects:</p>
+<ul>
+<li><code>{"a":1</code><strong>}, {</strong><code>"b":2}</code> → <code>{"a":1, "b":2}</code></li>
+<li><code>[{"a":1</code><strong>}], [{</strong><code>"b":2}]</code> → <code>[{"a":1, "b":2}]</code></li>
+</ul>
+</div>
+</div>
+<hr>
+<div class="latest-release">
+<h4 class="title is-4">Latest Release Notes</h4>
+<p><strong>2.2.6 - Oct. 13, 2022, 10:39 a.m.</strong></p>
+<p>2022-10-13<br>  • Improved performance and memory use<br>  • iOS 14 now requires ‘Shortcut Downgrader’ to get this shortcut</p>
+<br>
+<a href="changelog.html" class="button is-dark">Version history</a>
+</div>
+<hr>
+<div class="feedback">
+<h4 class="title is-4">Feedback</h4>
+<br>
+<article class="media" data-feedback-id="5552">
+<div class="media-content">
+<a href="https://routinehub.co/user/Shortycuts"><strong>@Shortycuts</strong></a>
+<div class="content">
+<span class="body">I like it! Great concept and implementation! Keep the great work! :)</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 9 months ago</small>
+
+</div>
+</div>
+</article>
+<article class="media" data-feedback-id="5553">
+<div class="media-content">
+<a href="https://routinehub.co/user/Shortycuts"><strong>@Shortycuts</strong></a>
+<div class="content">
+<span class="body">I&#x27;ve a suggestion, maybe you can add a mechanism, like &quot;MergeCuts&quot; by ROP, or some embed updaters. So you can add easily the JSON action to a specific place in a shortcut.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 9 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="5554">
+<div class="media-content">
+<a href="https://routinehub.co/user/gluebyte"><strong>@gluebyte</strong></a>
+<a href="/membership/">
+<span class="tag is-primary">Member</span>
+</a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">That&#x27;s a great idea. I&#x27;ll have a look. Thanks!</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 9 months ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+<article class="media" data-feedback-id="5561">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<div class="content">
+<span class="body">@gluebyte, brilliant work! Thanks so much for sharing!!!
+Coincidentally I’m working on a shortcut now that has a large and complex dictionary. I’ve wanted to reorganize it (for various reasons), but have been putting it off because it would have involved tedious, mind-numbing work within the Shortcuts app GUI. Now I can write it out to a file, make a few simple changes with a text editor, then use &#x27;Dictionary Action Builder&#x27; followed by ActionCuts (another must-have shortcut). Voilà!!!</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 9 months ago</small>
+
+</div>
+</div>
+</article>
+<article class="media" data-feedback-id="6536">
+<div class="media-content">
+<a href="https://routinehub.co/user/tctalk"><strong>@tctalk</strong></a>
+<div class="content">
+<span class="body">This is a lifesaver. Thank you for making this XD</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 7 months ago</small>
+
+</div>
+</div>
+</article>
+<article class="media" data-feedback-id="6559">
+<div class="media-content">
+<a href="https://routinehub.co/user/suliveevil"><strong>@suliveevil</strong></a>
+<div class="content">
+<span class="body">❤️❤️❤️</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 7 months ago</small>
+
+</div>
+</div>
+</article>
+<article class="media" data-feedback-id="6727">
+<div class="media-content">
+<a href="https://routinehub.co/user/EzWzs"><strong>@EzWzs</strong></a>
+<div class="content">
+<span class="body">Hey man how do you get that download bar for update kit download whats the html tag or attribute?</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 6 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="6728">
+<div class="media-content">
+<a href="https://routinehub.co/user/gluebyte"><strong>@gluebyte</strong></a>
+<a href="/membership/">
+<span class="tag is-primary">Member</span>
+</a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">It&#x27;s [![UpdateHub](https://i.imgur.com/om4hpSU.png)](https://routinehub.co/shortcut/2066)
+You can see more info if you tap the banner.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 6 months ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+<article class="media" data-feedback-id="8906">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<div class="content">
+<span class="body">@gluebyte, I used your amazing &#x27;Dictionary Action Builder&#x27; to create [Clipboard Tool](https://routinehub.co/shortcut/6569/). It includes a complex Dictionary action that contains 33 context sensitive variations of the shortcut main menu. Configuring a large Dictionary like this manually would be very tedious and error-prone without &#x27;Dictionary Action Builder&#x27;. Thanks for sharing it!</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 2 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="8912">
+<div class="media-content">
+<a href="https://routinehub.co/user/gluebyte"><strong>@gluebyte</strong></a>
+<a href="/membership/">
+<span class="tag is-primary">Member</span>
+</a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">So this is the shortcut you talked about earlier in the comment. Great job. 900+ actions!
+I have a few tips for you.
+(1) You can embed &#x27;dictionary pretty print&#x27; in your shortcut. The trick is to change the type of the URL magic variable inside the &#x27;decode URL&#x27; action from url to rich text.
+(2) You can put a newline character inside a dictionary value with Dictionary Action Builder. But do not touch it because if you do it will turn into a space.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 1 month ago</small>
+
+</div>
+<article class="media" data-feedback-id="8913">
+<div class="media-content">
+<a href="https://routinehub.co/user/gluebyte"><strong>@gluebyte</strong></a>
+<a href="/membership/">
+<span class="tag is-primary">Member</span>
+</a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">(3) You can use the &#x27;Calculate Expression&#x27; action to do complex calculations that would require multiple &#x27;Calculate&#x27; actions: https://www.reddit.com/r/shortcuts/comments/ivm4ja/functions_and_operators_supported_in_calculate/
+Again, nice shortcut and thanks for the credit!</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 1 month ago</small>
+
+</div>
+<article class="media" data-feedback-id="8918">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<div class="content">
+<span class="body">&gt;&quot;(3) You can use the &#x27;Calculate Expression&#x27; action to do complex calculations that would require multiple &#x27;Calculate&#x27; actions&quot; Please correct me if I&#x27;m wrong, but I think &#x27;Calculate Expression&#x27; is new in iOS 14. For now, at least, I wanted &#x27;Clipboard Tool&#x27; to work properly with iOS 13 as well.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 1 month ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+<article class="media" data-feedback-id="8915">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<div class="content">
+<span class="body">@gluebyte, thanks for the reply and tips. I&#x27;ve learned a lot by studying your shortcuts.
+&gt;&quot;So this is the shortcut you talked about earlier in the comment.&quot;
+No, my above comment was for an earlier shortcut that I had written, but it turned out with that one, I was unsuccessful. That dictionary had many encoded icons for vCard/contact menus and I suspect that I ran up against a Shortcuts app memory issue. But now that you mention it, maybe I&#x27;ll give it a try again under iOS 14.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 1 month ago</small>
+
+</div>
+</div>
+</article>
+<article class="media" data-feedback-id="8916">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<div class="content">
+<span class="body">&gt;&quot;(1) You can embed &#x27;dictionary pretty print&#x27; in your shortcut. The trick is to change the type of the URL magic variable inside the &#x27;decode URL&#x27; action from url to rich text.&quot; Excuse my ignorance, but how does one change the type &quot;inside&quot; the &#x27;decode URL&#x27;, i.e., what is the proper syntax. Thanks!</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 1 month ago</small>
+
+</div>
+<article class="media" data-feedback-id="8920">
+<div class="media-content">
+<a href="https://routinehub.co/user/gluebyte"><strong>@gluebyte</strong></a>
+<a href="/membership/">
+<span class="tag is-primary">Member</span>
+</a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">What I mean is this: https://i.imgur.com/4Z9YxSj.jpg Tap the magic variable and change the type to rich text. That will do the magic of turning html to rich text. Your all other comments make sense. :)</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 1 month ago</small>
+
+</div>
+<article class="media" data-feedback-id="8930">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<div class="content">
+<span class="body">Well, of course; I knew that. Maybe I need more sleep!!! I&#x27;ve made the change in &#x27;Clipboard Tool&#x27;, v1.2 and it works as expected. Thanks for the tip to change the Type to &#x27;Rich text&#x27;. I&#x27;m really curious how you learn these important details. Trial-and-error? Inside information?</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 1 month ago</small>
+
+</div>
+<article class="media" data-feedback-id="8942">
+<div class="media-content">
+<a href="https://routinehub.co/user/gluebyte"><strong>@gluebyte</strong></a>
+<a href="/membership/">
+<span class="tag is-primary">Member</span>
+</a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">Mostly from the shortcuts subreddit. :D</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 1 month ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+</div>
+</article>
+</div>
+</article>
+<article class="media" data-feedback-id="8917">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<div class="content">
+<span class="body">&gt;&quot; (2) You can put a newline character inside a dictionary value with Dictionary Action Builder. But do not touch it because if you do it will turn into a space.&quot; Yes, I discovered that &#x27;Dictionary Action Builder&#x27; would properly process \n, but I was concerned that others that might poke around in the dictionary might break it.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 1 month ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+<article class="media" data-feedback-id="8919">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<div class="content">
+<span class="body">@gluebyte, I&#x27;m curious how you have obtained all of your Shortcuts app insight. Are you at Apple or were you on the Workflow team? Friends at hight places?</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 1 month ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+<article class="media" data-feedback-id="10604">
+<div class="media-content">
+<a href="https://routinehub.co/user/mvan231"><strong>@mvan231</strong></a>
+<div class="content">
+<span class="body">I just want to say, this is an amazing tool for making complex dictionaries easier to merge with new items or just to make a shortcut look more &quot;clean&quot;. Nice work as always!</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 10 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="10610">
+<div class="media-content">
+<a href="https://routinehub.co/user/gluebyte"><strong>@gluebyte</strong></a>
+<a href="/membership/">
+<span class="tag is-primary">Member</span>
+</a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">Hi @mvan231, thanks a lot for the comment! :)</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 10 months ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+<article class="media" data-feedback-id="10675">
+<div class="media-content">
+<a href="https://routinehub.co/user/Sweetcuts"><strong>@Sweetcuts</strong></a>
+<a href="/membership/">
+<span class="tag is-primary">Member</span>
+</a>
+<div class="content">
+<span class="body">clap clap clap</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 10 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="10677">
+<div class="media-content">
+<a href="https://routinehub.co/user/gluebyte"><strong>@gluebyte</strong></a>
+<a href="/membership/">
+<span class="tag is-primary">Member</span>
+</a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">Thanks :) :) :)</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 10 months ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+<article class="media" data-feedback-id="11328">
+<div class="media-content">
+<a href="https://routinehub.co/user/atnbueno"><strong>@atnbueno</strong></a>
+<a href="/membership/">
+<span class="tag is-primary">Member</span>
+</a>
+<div class="content">
+<span class="body">Extremely useful tool. Glad to see it get even better :-)</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 9 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="11329">
+<div class="media-content">
+<a href="https://routinehub.co/user/gluebyte"><strong>@gluebyte</strong></a>
+<a href="/membership/">
+<span class="tag is-primary">Member</span>
+</a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">Thanks! I just updated it. Please check out. :)</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 9 months ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+<article class="media" data-feedback-id="11334">
+<div class="media-content">
+<a href="https://routinehub.co/user/aStrangeGuy_"><strong>@aStrangeGuy_</strong></a>
+<div class="content">
+<span class="body">This is great!</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 9 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="11336">
+<div class="media-content">
+<a href="https://routinehub.co/user/gluebyte"><strong>@gluebyte</strong></a>
+<a href="/membership/">
+<span class="tag is-primary">Member</span>
+</a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">Thanks! :)</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 9 months ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+<article class="media" data-feedback-id="11351">
+<div class="media-content">
+<a href="https://routinehub.co/user/dastefster"><strong>@dastefster</strong></a>
+<div class="content">
+<span class="body">Just downloaded v2.1 and, although my internet connection is fine, I keep getting an &quot;OSStatus error -9807&quot; when trying to run the &#x27;get current IP&#x27; action for some reason?</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 9 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="11354">
+<div class="media-content">
+<a href="https://routinehub.co/user/gluebyte"><strong>@gluebyte</strong></a>
+<a href="/membership/">
+<span class="tag is-primary">Member</span>
+</a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">I&#x27;m experiencing the same issue with all shortcuts with a &#x27;get current IP&#x27; action! Let me check and get back to you.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 9 months ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+<article class="media" data-feedback-id="11384">
+<div class="media-content">
+<a href="https://routinehub.co/user/scottdwr"><strong>@scottdwr</strong></a>
+<div class="content">
+<span class="body">This may be one of the most useful tools in my box. If pressed, i could copy paste actions on iOS 14, so Dictionary Action Builder slips ahead of my favorite action merging shortcut, doing something i can’t (don’t yet know how,). Thanks!!</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 8 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="11385">
+<div class="media-content">
+<a href="https://routinehub.co/user/gluebyte"><strong>@gluebyte</strong></a>
+<a href="/membership/">
+<span class="tag is-primary">Member</span>
+</a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">You are very welcome!! I&#x27;m waiting for Apple to fix the &#x27;OSStatus error -9807&#x27; issue.. :)</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 8 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="11386">
+<div class="media-content">
+<a href="https://routinehub.co/user/dastefster"><strong>@dastefster</strong></a>
+<div class="content">
+<span class="body">Have you considered using a simple JS line to return the device&#x27;s connection status in place of the &#x27;get IP&#x27; action? That&#x27;s what I&#x27;ve done in several shortcuts, which were also fetching the IP to verify network connection, to circumvent the error, and it works great! Also, JS returns the status result a little faster and doesn&#x27;t require &#x27;internet&#x27; access permissions like getting the IP!</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 8 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="11387">
+<div class="media-content">
+<a href="https://routinehub.co/user/gluebyte"><strong>@gluebyte</strong></a>
+<a href="/membership/">
+<span class="tag is-primary">Member</span>
+</a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">Thanks for the suggestion. Did you mean the &#x27;navigator.onLine&#x27; code? It only checks for local connectivity; if I&#x27;m connected to my wifi but the router&#x27;s outbound connection is dead, the code still thinks it&#x27;s online. If there&#x27;s something else, please let me know.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 8 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="11402">
+<div class="media-content">
+<a href="https://routinehub.co/user/dastefster"><strong>@dastefster</strong></a>
+<div class="content">
+<span class="body">yes, navigator.onLine is what I was talking about. didn&#x27;t realize it only check local connection—sorry!</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 8 months ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+</div>
+</article>
+</div>
+</article>
+</div>
+</article>
+<article class="media" data-feedback-id="11949">
+<div class="media-content">
+<a href="https://routinehub.co/user/luderle"><strong>@luderle</strong></a>
+<div class="content">
+<span class="body">Thanks for this great shortcut. However I get the following error when trying to open a JSON file or copying from clipboard:
+„An error occurred in the destination for the data. The data couldn‘t be written because of an error in the destination for the data.“
+What am I doing wrong?</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 7 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="11950">
+<div class="media-content">
+<a href="https://routinehub.co/user/gluebyte"><strong>@gluebyte</strong></a>
+<a href="/membership/">
+<span class="tag is-primary">Member</span>
+</a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">Hi, can you share the JSON source?</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 7 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="11954">
+<div class="media-content">
+<a href="https://routinehub.co/user/luderle"><strong>@luderle</strong></a>
+<div class="content">
+<span class="body">Sure, here we go:
+https://www.dropbox.com/s/g32139cvlsa851t/lenzerheide-4%2056.json?dl=0</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 7 months ago</small>
+
+ </div>
+<article class="media" data-feedback-id="11964">
+<div class="media-content">
+<a href="https://routinehub.co/user/gluebyte"><strong>@gluebyte</strong></a>
+<a href="/membership/">
+<span class="tag is-primary">Member</span>
+</a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">Thanks for sharing. Here&#x27;s what I&#x27;ve found out so far: (1) It&#x27;s a new bug in iOS 14.5 (2) It doesn&#x27;t happen on iOS 14.4 or 13 (3) It only happens if a JSON contains more than 20 sub-dictionaries on iOS 14.5 (4) I haven&#x27;t yet found a workaround (5) Here&#x27;s an output shortcut in case you need it: https://www.icloud.com/shortcuts/a45799c3df764fb8a3194b1d9a1d19c1 (6) I&#x27;ll keep looking for a solution until the bug gets fixed (7) Thanks again!</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 7 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="11969">
+<div class="media-content">
+<a href="https://routinehub.co/user/luderle"><strong>@luderle</strong></a>
+<div class="content">
+<span class="body">Wow, cool, I admire how you do that. I have no idea how complicated this is for you, so please just say it if this is too rude, otherwise may I ask, if you could maybe also convert these two lists into shortcuts? That would be awesome thanks.
+https://www.dropbox.com/s/mm889qg79osl6bf/lenzerheide_backup.json?dl=0
+https://www.dropbox.com/s/d37xfl8vt3isw6o/COVID-19.json?dl=0
+The background is: my Data Jar crashed and I can‘t recover it… Thank you so much</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 7 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="11970">
+<div class="media-content">
+<a href="https://routinehub.co/user/gluebyte"><strong>@gluebyte</strong></a>
+<a href="/membership/">
+<span class="tag is-primary">Member</span>
+</a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">It&#x27;s pretty easy for me because I have iOS 13 on my old iPhone. Here you are: https://www.icloud.com/shortcuts/e9058c0ed59848c6b1923e6a03099c9c   https://www.icloud.com/shortcuts/8c9686a453554d3b866fad5ebd5afe95</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 7 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="11971">
+<div class="media-content">
+<a href="https://routinehub.co/user/luderle"><strong>@luderle</strong></a>
+<div class="content">
+<span class="body">Great, thanks</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 7 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="13469">
+<div class="media-content">
+<a href="https://routinehub.co/user/gluebyte"><strong>@gluebyte</strong></a>
+<a href="/membership/">
+<span class="tag is-primary">Member</span>
+</a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">Hi, I just tested with your data on iOS 15 beta. The bug is fixed; it&#x27;s converted successfully. However, it&#x27;s sloooooooow to convert, open and edit. Hopefully the performance issue gets fixed soon.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 3 months ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+</div>
+</article>
+</div>
+</article>
+</div>
+</article>
+</div>
+</article>
+</div>
+</article>
+</div>
+</article>
+<article class="media" data-feedback-id="13055">
+<div class="media-content">
+<a href="https://routinehub.co/user/scottdwr"><strong>@scottdwr</strong></a>
+<div class="content">
+<span class="body">How does it work on iOS15? I receive an error saying “importing unsigned shortcuts is not supported.” I’ve looked through the shortcut, … I saw the “Open In …” actions didn’t have an app selected, so assuming it’s supposed to be the Shortcuts App, I selected that. But that didn’t help either.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 4 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="13056">
+<div class="media-content">
+<a href="https://routinehub.co/user/gluebyte"><strong>@gluebyte</strong></a>
+<a href="/membership/">
+<span class="tag is-primary">Member</span>
+</a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">iOS 15 stopped supporting creating shortcuts programmatically from shortcuts. It worked on beta 1 but not any more. More info here: https://www.reddit.com/r/shortcuts/comments/okkfj7/ I will probably update this shortcut, but it seems that you will need iOS 14 or macOS to use it. 😭</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 4 months ago</small>
+
+</div>
+</div>
+</article>
+<article class="media" data-feedback-id="13470">
+<div class="media-content">
+<a href="https://routinehub.co/user/gluebyte"><strong>@gluebyte</strong></a>
+<a href="/membership/">
+<span class="tag is-primary">Member</span>
+</a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">Hi, I just updated the shortcut and it kind of works on iOS 15. You can read more on this, but in short, ‘Shortcut Source Helper’ works on iOS 15 if you have a Mac that your device can connect to via SSH. I guess that&#x27;s the only option on iOS 15 for now.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 3 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="13482">
+<div class="media-content">
+<a href="https://routinehub.co/user/scottdwr"><strong>@scottdwr</strong></a>
+<div class="content">
+<span class="body">Damn dude. You rock.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 3 months ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+</div>
+</article>
+<article class="media" data-feedback-id="13875">
+<div class="media-content">
+<a href="https://routinehub.co/user/atnbueno"><strong>@atnbueno</strong></a>
+<a href="/membership/">
+<span class="tag is-primary">Member</span>
+</a>
+<div class="content">
+<span class="body">FYI: it doesn&#x27;t work with https://github.com/FifiTheBulldog/ios-settings-urls/blob/master/settings-urls-sorted.json in iOS 14.8</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 2 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="13883">
+<div class="media-content">
+<a href="https://routinehub.co/user/gluebyte"><strong>@gluebyte</strong></a>
+<a href="/membership/">
+<span class="tag is-primary">Member</span>
+</a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">Thanks for letting me know. It&#x27;s a bug in iOS 14 that was already commented above about 5 months ago. Fortunately it seems fixed in iOS 15.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 2 months ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+<article class="media" data-feedback-id="14975">
+<div class="media-content">
+<a href="https://routinehub.co/user/nicolobedendo"><strong>@nicolobedendo</strong></a>
+<div class="content">
+<span class="body">WOW this is EPIC! Only the login using the key in enclave did not work but this is not relate
+to your action… what about the option to call from a action who receive the json from an api and your shortcut send back to the action the dictionary like now? so without any human interaction but with the input requested hardcoded?</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 10 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="14976">
+<div class="media-content">
+<a href="https://routinehub.co/user/gluebyte"><strong>@gluebyte</strong></a>
+<a href="/membership/">
+<span class="tag is-primary">Member</span>
+</a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">Thanks. There&#x27;s no way to return a dictionary action to the caller, because a new shortcut has to be created. And creating a new shortcut requires user interaction.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 10 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="14977">
+<div class="media-content">
+<a href="https://routinehub.co/user/nicolobedendo"><strong>@nicolobedendo</strong></a>
+<div class="content">
+<span class="body">i see… in any case is the best shortcut i ever seen… (maybe because in my little esperience till now i work most of the
+time with json nested like hell) and the coding is super
+(most of the shortcut downloaded is more
+for study instead of use)</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 10 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="14978">
+<div class="media-content">
+<a href="https://routinehub.co/user/gluebyte"><strong>@gluebyte</strong></a>
+<a href="/membership/">
+<span class="tag is-primary">Member</span>
+</a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">Great to hear that. I learn a lot from r/shortcuts 🙂</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 10 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="14979">
+<div class="media-content">
+<a href="https://routinehub.co/user/nicolobedendo"><strong>@nicolobedendo</strong></a>
+<div class="content">
+<span class="body">agree and yesterday you also helped me on discord for my first api post… who still in wip :)</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 10 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="14983">
+<div class="media-content">
+<a href="https://routinehub.co/user/nicolobedendo"><strong>@nicolobedendo</strong></a>
+<div class="content">
+<span class="body">btw was my fault before with ssh key, i created for my ssh login unreleted to shortcut enclave and ssh-keychain as soon as was introduced in OSX and when i saw in your setup the option tu use
+that (look like something recently introduced m, right?) i supposed that use the same one and after
+i saw that the public key was not the se
+already saved in my
+server so now work also in that way… really
+good job</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 10 months ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+</div>
+</article>
+</div>
+</article>
+</div>
+</article>
+</div>
+</article>
+</div>
+</div>
+</div>
+</div>
+</section>
+</body>
+</html>

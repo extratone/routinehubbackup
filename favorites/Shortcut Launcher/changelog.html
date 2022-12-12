@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" class="shortcut-changelog">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A changelog for Shortcut Launcher">
+<meta property="og:url" content="/shortcut/786/changelog" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="RoutineHub - Changelog for Shortcut Launcher" />
+<meta property="og:description" content="categorize and launch shortcuts; streamline the widget" />
+<meta property="og:image" content="https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/aa91ab0257a249d6987fcce249af66f0.webp" />
+<meta name="twitter:card" content="summary" />
+<title>RoutineHub • Shortcut Launcher</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono&display=swap" rel="stylesheet">
+<link href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/shortcut-icons/ios12-glyphs.png">
+<link href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/shortcut-icons/ios13-glyphs.png">
+<link href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/shortcut-icons/ios14-glyphs.png">
+<link href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/shortcut-icons/ios15-glyphs.png">
+<link rel="stylesheet" type="text/css" href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/main.37.css" />
+</head>
+<body>
+<div class="message pop-up">
+<div class="message-header">
+<p class="message-title"></p>
+<button class="delete" aria-label="delete"></button>
+</div>
+<div class="message-body"></div>
+</div>
+<section id="content" class="section">
+<div class="container">
+<div class="heading">
+<h3 class="title is-3">Version History</h3>
+<h4 class="subtitle is-4">Shortcut Launcher</h4>
+</div>
+<hr>
+<a href="description.html" class="button is-dark">&#8249; Go back</a>
+<br>
+<br>
+<div class="versions">
+<article class="media">
+<div class="media-content">
+<div class="content">
+<p>
+<strong>1.2</strong> <small>4 years ago</small>
+<br>
+<small>iOS 12</small>
+<br>
+a) Set &#x27;Show in Share Sheet&#x27; On (Accept Types = Anything) and added &#x27;Get Variable [Shortcut Input]&#x27; action before the two &#x27;Run Shortcut&#x27; actions. Therefore &#x27;Share Sheet&#x27; shortcuts will work as expected when this shortcut is used in the &#x27;Share Sheet&#x27; to launch them.<br><br>b) This shortcut only checks for a new version of itself using UpdateKit when it is run from &#x27;Shortcut Launcher (helper)&#x27; via the &#x27;Run Shortcut&#x27; action. Prior to to the &#x27;Share Sheet&#x27; change above, &#x27;Shortcut Launcher (helper)&#x27; passed &#x27;1&#x27; to this shortcut. The &#x27;1&#x27; in &#x27;Shortcut Input&#x27; was the signal to this shortcut to check for a new version. Since there is a reasonably high probability that a &#x27;1&#x27; could be passed via the &#x27;Share Sheet&#x27; during normal operation, the &#x27;1&#x27; has been changed to ╽❆꒦ (three Unicode characters). There is a negligible probability that these three consecutive characters would ever be passed via the &#x27;Share Sheet&#x27;.<br><br>c) Updated version and download link for &#x27;Shortcut Launcher (helper)&#x27; shortcut since it was updated to Version 1.2.<br><br>Note: Tested with Shortcuts v2.1.1 on iPhone 8 Plus and iPad Pro 10.5&quot;
+<br><br>
+<em>959 downloads</em>
+</p>
+</div>
+<nav class="level is-mobile">
+<div class="level-left">
+<a class="level-item button is-dark" href="https://www.icloud.com/shortcuts/aa91ab0257a249d6987fcce249af66f0">Download</a>
+</div>
+</nav>
+</div>
+</article>
+<article class="media">
+<div class="media-content">
+<div class="content">
+<p>
+<strong>1.1</strong> <small>4 years ago</small>
+<br>
+<small>iOS 12</small>
+<br>
+a) Removed &#x27;Get Name&#x27; action after &#x27;Get My Shortcuts&#x27; action so that shortcut icons will be displayed on lists (if [Use Shortcut Launcher (helper)] = 0).<br><br>b) Improved the descriptions of some of the Setup Parameters (a.k.a. Import Questions).<br><br>c) Improved the UpdateKit Alert describing what will be observed if a new version is available.<br><br>d) Updated download link for &#x27;Shortcut Launcher (helper)&#x27; shortcut since it was updated to Version 1.1.<br><br>Note: Tested with Shortcuts v2.1.1 on iPhone 8 Plus and iPad Pro 10.5&quot;
+<br><br>
+<em>226 downloads</em>
+</p>
+</div>
+<nav class="level is-mobile">
+<div class="level-left">
+<a class="level-item button is-dark" href="https://www.icloud.com/shortcuts/e7d430ab32c24fbeb85eeefa28f32be6">Download</a>
+</div>
+</nav>
+</div>
+</article>
+<article class="media">
+<div class="media-content">
+<div class="content">
+<p>
+<strong>1.0</strong> <small>4 years, 1 month ago</small>
+<br>
+<small>iOS 12</small>
+<br>
+Revisions since 2018-10-19 release on Reddit (/shortcuts) and Automators Talk:<br><br>a) Uploaded this shortcut, &#x27;Shortcut Launcher&#x27;, and &#x27;Shortcut Launcher (helper)&#x27; to RoutineHub.<br><br>b) Included UpdateKit, but only run the update check if &#x27;Shortcut Launcher&#x27; is launched from &#x27;Shortcut Launcher (helper)&#x27;. For future updates (of v1.0 or greater) of &#x27;Shortcut Launcher&#x27;, before the update check, the Dictionary action values will be saved to /iCloud Drive/Shortcuts/Shortcut Launcher (helper)/Dictionary-Shortcut Launcher_v[version].txt and to a new note in the Notes app. Thus if the Dictionary action default values were previously changed to customize the behavior of &#x27;Shortcut Launcher&#x27;, the changes can be more easily restored by returning to the new note (or opening the text file) and then copying the customized values back to the default Dictionary after the &#x27;Shortcut Launcher&#x27; update.<br><br>c) Changed [Use Shortcut Launcher (helper)] Import Question default value to 1.<br><br>d) If [Use Shortcut Launcher (helper)] = 1, but it appears that the helper has not been run on the device, check for it. If it is not found, offer to download it; if it is found, run it.<br><br>e) &#x27;Shortcut Launcher (helper)&#x27; now writes to an iCloud folder based on its name, not the name of Parent (this shortcut). This change was made to better accommodate cases where a user might have more than one copy of this shortcut with different Dictionary settings, e.g., &#x27;Shortcut Launcher - Categories&#x27; and &#x27;Shortcut Launcher - Shortcuts&#x27;. Note, only one helper shortcut (i.e., &#x27;Shortcut Launcher (helper))&#x27; is required for all Parents. But there is a Text action at the top of the helper that must be modified to add each Parent name.<br><br>f) Checks the version of &#x27;Shortcut Launcher (helper)&#x27; last run; if it is older than the version specified in this shortcut, the latest version is downloaded.<br><br>g) Prior to this version, Dictionary entries with an undefined value (e.g., &#x27;X&#x27;) were assumed to be Category items. They are now ignored. This provides a method to easily disable a Category or Shortcut but leave it in the Dictionary for subsequent reactivation.<br><br>h) Changed Match Text Pattern from [^ \t]{1} to ([^\s]+). The original pattern was defined to return the first non whitespace character. For almost all emojis, this worked as expected. But for a few emojis (e.g., ⭐️, #️⃣) the result would be different than the emoji. For example with #️⃣ XYZ, the first pattern would return #, not the emoji hashtag. Thus the Match Text Pattern was changed to find all characters up to the first space.<br><br>i) In the Dictionary, modified the example Categories &#x27;C&#x27; to ensure that all had at least one space after the leading emoji.<br><br>j) For the [ Filter by Shortcut Name ] option, trimmed leading and trailing whitespace from the user&#x27;s response. Also, in the prompt, warned that the search is case sensitive.<br><br>WARNING: If you have used a previous version of &#x27;Shortcut Launcher&#x27; (prior to v1.0, 2018-11-12) and you modified the Dictionary by adding your own Categories &#x27;C&#x27; or Shortcuts &#x27;S&#x27;, consider renaming the previously used version before downloading this version. Once v1.0 (or later) is modified, this precaution will not be necessary as the Dictionary settings will be copied the the file and note as mentioned above.<br><br>Note: Tested with Shortcuts v2.1 on iPhone 8 Plus and iPad Pro 10.5&quot;.
+<br><br>
+<em>220 downloads</em>
+</p>
+</div>
+<nav class="level is-mobile">
+<div class="level-left">
+<a class="level-item button is-dark" href="https://www.icloud.com/shortcuts/267228b79a814eb298fe2fa9fdf0746e">Download</a>
+</div>
+</nav>
+</div>
+</article>
+</div>
+</div>
+</section>
+</body>
+</html>

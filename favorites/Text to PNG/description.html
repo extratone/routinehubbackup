@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" class="shortcut">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Convert text to an image with many custom parameters">
+<meta property="og:url" content="/shortcut/6552/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="RoutineHub - Text to PNG" />
+<meta property="og:description" content="Convert text to an image with many custom parameters" />
+<meta property="og:image" content="https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/f2c6af13dbe34658bdbc1be57de38feb.webp" />
+<meta name="twitter:card" content="summary" />
+<title>RoutineHub • Text to PNG</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono&display=swap" rel="stylesheet">
+<link href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/shortcut-icons/ios12-glyphs.png">
+<link href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/shortcut-icons/ios13-glyphs.png">
+<link href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/shortcut-icons/ios14-glyphs.png">
+<link href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/shortcut-icons/ios15-glyphs.png">
+<link rel="stylesheet" type="text/css" href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/main.37.css" />
+<link rel="stylesheet" type="text/css" href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/fancybox/jquery.fancybox.min.css" />
+</head>
+<body>
+<div class="message pop-up">
+<div class="message-header">
+<p class="message-title"></p>
+<button class="delete" aria-label="delete"></button>
+</div>
+<div class="message-body"></div>
+</div>
+<section id="content" class="section">
+<div class="container">
+<article class="media shortcut-header">
+<figure class="media-left">
+<div class="shortcut-icon s64 
+								ios15 
+								c3679049983 
+								g59853">
+</div>
+</figure>
+<div class="media-content">
+<div class="content">
+<div class="titles">
+<h3 class="title is-3">Text to PNG</h3>
+<h4 class="subtitle is-4">Convert text to an image with many custom parameters</h4>
+</div>
+</div>
+</article>
+<hr>
+<div class="columns">
+<div class="column sidebar is-2">
+<div class="actions">
+<a href="https://www.icloud.com/shortcuts/fe11a23729674252815270504ec48447" class="button is-dark is-fullwidth">Get Shortcut</a>
+</div>
+<br>
+<div class="heart has-text-centered" data-id="6552">
+<span class="heart-icon ">
+♥️
+</span>
+<span class="heart-count">16</span>
+</div>
+<br>
+<br>
+<p class="is-size-5"><strong>Information</strong></p>
+<div class="information">
+<p>Author:
+<a href="https://routinehub.co/user/atnbueno"><strong>@atnbueno</strong></a>
+<a href="/membership/">
+<span class="tag is-primary">Member</span>
+</a>
+<p>Version: 2.0.0</p>
+<p>iOS: 15</p>
+<p>Updated: 06/13/22</p>
+<p>Downloads: 798</p>
+<p>Categories:</p>
+<ul class="fa-ul">
+<li>
+<a href="https://routinehub.co/category/photo-video/">
+<span class="fa-li">
+<i class="fas fa-camera"></i>
+</span>
+Photo &amp; Video
+</a>
+</li>
+<li>
+<a href="https://routinehub.co/category/utilities/">
+<span class="fa-li">
+<i class="fas fa-calculator"></i>
+</span>
+Utilities
+</a>
+</li>
+</ul>
+</div>
+<hr>
+<div class="qr-code has-text-centered is-hidden-mobile">
+<img src="https://api.qrserver.com/v1/create-qr-code/?data=https://routinehub.cohttps://www.icloud.com/shortcuts/fe11a23729674252815270504ec48447" alt="QR Code for downloading Text to PNG" />
+<p class="is-size-7"><em>Scan using your iPhone's camera to download</em></p>
+</div>
+</div>
+<div class="column is-10 details">
+<div class="description">
+<h4 class="title is-4">Description</h4>
+<div class="content">
+<p>Like <a href="https://routinehub.co/shortcut/6311">Unicolor PNG</a> this was another shortcut I had for some time. Occasionally I needed an image of a text of a particular typeface, size, colors, and centered in a rectangle.</p>
+<p>The amazing <a href="https://developer.mozilla.org/docs/Web/API/Canvas_API">Canvas API</a> from JavaScript made this quite easy: some typography notions and a bit of math, and I had a decent 1.0 version in shortcut form.</p>
+<p>Then iOS 15.2 came with a new action, "Overlay text", which did even more things than my shortcut. But both had still a serious limitation: both the shortcut and the new native action were for a single line of text.</p>
+<p>So I went down the rabbit hole of <a href="https://developer.mozilla.org/docs/Web/CSS/CSS_Text/Wrapping_Text">text wrapping</a>, <a href="https://routinehub.co/shortcut/12217/">hyphenation</a>, and <a href="https://developer.mozilla.org/docs/Web/API/TextMetrics">typography</a> in JavaScript, and ended up with the new 2.0 version of the shortcut. </p>
+<p>As with version 1.x, the shortcut works as a demo when it has no input (showing the result to the user), and as a function when it receives a dictionary (or JSON string) with parameters (returning silently the output image).</p>
+<p><img alt="Example of use of all the parameters" src="https://www.atnbueno.com/text-to-png-2-example1.png"></p>
+<p>Version 2.0 of the shortcut goes up to <strong>twelve parameters</strong>:</p>
+<ul>
+<li><strong>text</strong> is the text you want to convert to an image (in the demo dictionary inside the shortcut, the ✂ emojis mark possible hyphenation points)</li>
+<li><strong>font</strong> is the style, size and <a href="https://developer.apple.com/fonts/system-fonts/">typeface to use</a>, using <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font">CSS syntax</a> (e.g. <em>bold 56px Gill Sans</em>)</li>
+<li><strong>width</strong> and <strong>height</strong> are the desired dimensions of the image in pixels. If <em>width</em> is omitted, the text won't be wrapped and the image will be as wide as needed to contain the text as a single line. If <em>height</em> is not large enough for the indicated text and font, the image will grow taller.</li>
+<li><strong>color</strong> is the color of the text, and can have any <a href="https://developer.mozilla.org/docs/Web/CSS/color">valid CSS color value</a> (e.g. <em>red</em>, <em>#FF00FF</em>, <em>rgba(255, 127, 0, 0.5)</em>, <em>hsl(90deg, 100%, 50%)</em>, <em>hwb(194 0% 0% / .5)</em>, <em>transparent</em>)</li>
+<li><strong>bgcolor</strong> is the background color of the text</li>
+<li><strong>alignment</strong> aligns the text vertically (<em>top</em>, <em>center</em>, <em>bottom</em>) and/or horizontally (<em>left</em>, <em>center</em>, <em>right</em>). Examples: <em>top left</em>, <em>center</em>, <em>bottom right</em></li>
+<li><strong>padding</strong> is additional space around the text, using <a href="https://developer.mozilla.org/docs/Web/CSS/padding">CSS syntax</a>, but only in pixels</li>
+<li><strong>spacing</strong> multiplies the space between lines of wrapped text</li>
+<li><strong>outline</strong> allows drawing a line around each letter with a custom width and color. Example: <em>2px #DC0</em></li>
+<li><strong>shadow</strong> adds a shadow effect to the text, using also <a href="https://developer.mozilla.org/docs/Web/CSS/text-shadow">CSS syntax</a>. Example: <em>2px 2px 4px black</em></li>
+<li><strong>hyphen</strong> is the custom character in the text to be considered an hyphenation point (where a word can be broken to wrap the text). By default it's the "¬" character, and the shortcut also supports Unicode soft hyphens (normally invisible).</li>
+</ul>
+<p>With these and a couple <em>hundred</em> lines of JavaScript the desired PNG is generated.</p>
+<p><img alt="Example of use of only some parameters" src="https://www.atnbueno.com/text-to-png-2-example2.png"></p>
+<p>The shortcut has only 14 actions, because all the work is done with JavaScript, which I've tried to make clear and readable.</p>
+<h5>TO DO</h5>
+<ul>
+<li>Fix application of left/right margins when they're different</li>
+<li>Add support for multiple shadows</li>
+</ul>
+</div>
+</div>
+<hr>
+<div class="latest-release">
+<h4 class="title is-4">Latest Release Notes</h4>
+<p><strong>2.0.0 - June 13, 2022, 9:16 p.m.</strong></p>
+<p>Adds text wrapping with support for hyphenation, line spacing, line breaks, horizontal and vertical alignment, padding, shadow and outline. It should work with iOS 13/14 but I haven&#x27;t been able to test it.</p>
+<br>
+<a href="changelog.html" class="button is-dark">Version history</a>
+</div>
+<hr>
+<div class="feedback">
+<h4 class="title is-4">Feedback</h4>
+<br>
+<p>No feedback yet</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</body>
+</html>

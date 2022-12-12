@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="en" class="shortcut">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="a full-featured Backup, Archive, and Restore Tool">
+<meta property="og:url" content="/shortcut/4069/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="RoutineHub - BART" />
+<meta property="og:description" content="a full-featured Backup, Archive, and Restore Tool" />
+<meta property="og:image" content="https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/b4af0b459a19462aaf7f584aaa120971.webp" />
+<meta name="twitter:card" content="summary" />
+<title>RoutineHub • BART</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono&display=swap" rel="stylesheet">
+<link href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/shortcut-icons/ios12-glyphs.png">
+<link href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/shortcut-icons/ios13-glyphs.png">
+<link href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/shortcut-icons/ios14-glyphs.png">
+<link href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/shortcut-icons/ios15-glyphs.png">
+<link rel="stylesheet" type="text/css" href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/main.37.css" />
+<link rel="stylesheet" type="text/css" href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/fancybox/jquery.fancybox.min.css" />
+</head>
+<body>
+<div class="message pop-up">
+<div class="message-header">
+<p class="message-title"></p>
+<button class="delete" aria-label="delete"></button>
+</div>
+<div class="message-body"></div>
+</div>
+<section id="content" class="section">
+<div class="container">
+<article class="media shortcut-header">
+<figure class="media-left">
+<div class="shortcut-icon s64 
+								ios14 
+								c4292093695 
+								g59821">
+</div>
+</figure>
+<div class="media-content">
+<div class="content">
+<div class="titles">
+<h3 class="title is-3">BART</h3>
+<h4 class="subtitle is-4">a full-featured Backup, Archive, and Restore Tool</h4>
+</div>
+</div>
+</article>
+<hr>
+<div class="columns">
+<div class="column sidebar is-2">
+<div class="actions">
+<a href="https://www.icloud.com/shortcuts/b4af0b459a19462aaf7f584aaa120971" class="button is-dark is-fullwidth">Get Shortcut</a>
+</div>
+<br>
+<div class="heart has-text-centered" data-id="4069">
+<span class="heart-icon ">
+♥️
+</span>
+<span class="heart-count">41</span>
+</div>
+<br>
+<br>
+<p class="is-size-5"><strong>Information</strong></p>
+<div class="information">
+<p>Author:
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<p>Version: 3.1</p>
+<p>iOS: 14</p>
+<p>Updated: 05/08/21</p>
+<p>Downloads: 5215</p>
+<p>Categories:</p>
+<ul class="fa-ul">
+<li>
+<a href="https://routinehub.co/category/development-tools/">
+<span class="fa-li">
+<i class="fas fa-wrench"></i>
+</span>
+Development Tools
+</a>
+</li>
+<li>
+<a href="https://routinehub.co/category/utilities/">
+<span class="fa-li">
+<i class="fas fa-calculator"></i>
+</span>
+Utilities
+</a>
+</li>
+</ul>
+</div>
+<hr>
+<div class="qr-code has-text-centered is-hidden-mobile">
+<img src="https://api.qrserver.com/v1/create-qr-code/?data=https://routinehub.cohttps://www.icloud.com/shortcuts/b4af0b459a19462aaf7f584aaa120971" alt="QR Code for downloading BART" />
+<p class="is-size-7"><em>Scan using your iPhone's camera to download</em></p>
+</div>
+</div>
+<div class="column is-10 details">
+<div class="description">
+<h4 class="title is-4">Description</h4>
+<div class="content">
+<hr>
+<blockquote>
+<p>This version of <strong>BART</strong> has been tested with iPadOS 14.5 and 14.6 beta 2.</p>
+<p>Unfortunately, with <strong>iOS 14.5</strong> (and thus far persisting with the early <strong>iOS 14.6 betas</strong>), Apple introduced a new bug that generates an error when some shortcuts are written to the local iCloud Drive. If your <em>backups</em> and <em>archives</em> generate an error (specifically <strong>An error occurred in the destination for the data.</strong>), refer to the <strong>iOS 14.5 Write Error</strong> section below.</p>
+<p><strong>2021-05-17 UPDATE</strong>: At least when tested with my long list of shortcuts, it appears that Apple has addressed this issue. Starting with <strong>iOS 14.6 beta 3</strong> (18F5065a), I no longer see this bug. To confirm that your shortcuts are <em>clean</em>, try running <a href="https://routinehub.co/shortcut/9007/">Identify iOS 14.5 Problematic Shortcuts</a> on your updated system. If you do not see an error, your set of shortcuts have been successfully written to iCloud.</p>
+</blockquote>
+<hr>
+<p><img alt="" src="https://i.imgur.com/F0tbZvS.png"></p>
+<h3>Overview</h3>
+<p><strong>BART</strong> is a shortcut that can back up, archive, and restore shortcuts in the <em>Shortcuts</em> app <em>Library</em>, also known as <em>My Shortcuts</em>. It is designed to be full-featured, yet simple and fast to use. In fact, most of the information below can be easily discovered by simply running the shortcut*. However if you prefer to read instructions and/or learn some of the finer points of <strong>BART</strong>, the following is for you.</p>
+<p>* There are a few significant exceptions. For example, running <strong>BART</strong> from another shortcut, a very powerful yet easy to use feature, is not discoverable (unless you peer into the actions of the <strong>BART</strong> 😀 ). Therefore, even if you have used the interactive features of <strong>BART</strong>, you'll find some very useful information beginning with the section <strong>Running BART From Another Shortcut</strong>.</p>
+<p><em>A video overview of <a href="https://routinehub.co/shortcut/4069">BART</a> is available <a href="https://www.youtube.com/playlist?list=PL5PEwdyatL4KtxN5kU3gJRyZyRjG5YSXa">here</a>. Changes for <strong>Version 2.0</strong> are highlighted in <a href="https://youtu.be/Yb1SwY7N7xo">this video</a>.</em></p>
+<hr>
+<h3>So what's the point?</h3>
+<p><em>Short answer:</em> <strong>It's always good to back up your work!</strong></p>
+<p><em>Long answer:</em> <em>Stuff</em> happens! On occasion, the iOS <em>Shortcuts</em> app will display an error indicating that the database is corrupt. If <em>iCloud Sync</em> (one of the <em>Shortcuts</em> app settings) is set, the <em>Shortcuts</em> app attempts to recreate <em>My Shortcuts</em> after the error dialog is dismissed. Depending on the circumstances, this restoration can range from a <em>complete recovery</em> to a <em>complete loss</em> of all of the shortcuts in <em>My Shortcuts</em>. If not a <em>complete recovery</em>, shortcut backups are indispensable. Backups are also valuable during more common and frequent events, e.g., if a shortcut is mistakenly modified or deleted.</p>
+<p>In addition to shortcut <em>protection</em>, backups can be employed to <em>manage</em> shortcuts. For example, a user might find a group of shortcuts that are useful occasionally, but not want to clutter <em>My Shortcuts</em> with these rarely used shortcuts. Such shortcuts could be <em>archived</em> and <em>restored</em> when needed.</p>
+<hr>
+<h3>BART Main Menu</h3>
+<p>This section includes a short description for each <em>Shortcut Operation</em> on the <strong>BART</strong> main menu.</p>
+<p><img alt="" src="https://i.imgur.com/Xo8Gl9E.png"></p>
+<p><img alt="" src="https://i.imgur.com/nGEPr9N.png"> <strong>Save Snapshot of My Shortcuts</strong> saves a copy of all shortcuts in <em>My Shortcuts</em> to the <em>snapshot</em> folder: /iCloud Drive/Shortcuts/<strong>BART/Snapshot/</strong>. All files previously in this folder are deleted before the shortcuts are copied to this folder. This is the fastest and simplest way to <em>back up</em> <em>My Shortcuts</em>.</p>
+<p><img alt="" src="https://i.imgur.com/tZoJmhU.png"> <strong>Back Up Selected</strong> saves copy of one or more selected shortcuts in <em>My Shortcuts</em> to the <em>backup</em> folder: /iCloud Drive/Shortcuts/<strong>BART/Backup/</strong>. Shortcuts files in the folder <strong>are written over</strong> if the selection includes shortcuts with the same names. </p>
+<p>Shortcuts previously backed up to the <em>backup</em> folder and later deleted from <em>My Shortcuts</em> are <strong>not</strong> automatically deleted from the <em>backup</em> folder. Thus over time, the <em>backup</em> folder will likely contain a superset of shortcuts from <em>My Shortcuts</em>. </p>
+<p><img alt="" src="https://i.imgur.com/QgoP3qB.png"> <strong>Archive All</strong> creates a zip archive of the shortcuts in <em>My Shortcuts</em> and saves the file to the <em>archive</em> folder: /iCloud Drive/Shortcuts/<strong>BART/Archive/</strong>. The archive is named based on the date/time and #<em>x</em> (where <em>x</em> is the number of shortcuts in the new zip archive). For example, the following archive would include <em>102</em> shortcuts: 2019-12-10-073522_#102.zip.</p>
+<p><img alt="" src="https://i.imgur.com/I4QdpVw.png"> <strong>Archive Selected</strong> creates a zip archive of one or more <em>selected</em> shortcuts in <em>My Shortcuts</em> and saves the file to the <em>archive</em> folder: /iCloud Drive/Shortcuts/<strong>BART/Archive/</strong>. The archive is named based on the date/time and either: a) #<em>x</em> (where <em>x</em> is a number <em>2</em> to <em>n</em> indicating the number of contained shortcuts), or b) <em>shortcutname</em> (if only <em>one</em> shortcut is selected). For example, the following archive would include <em>102</em> shortcuts: 2019-12-10-073522_#102.zip and the following would include one shortcut named <em>xyz</em>: 2019-12-10-073522_xyz.zip.</p>
+<p><img alt="" src="https://i.imgur.com/Cs2yfeU.png"> <strong>Restore</strong> <em>(from a selected folder)</em> displays a list of <em>specified</em> folders that contain shortcut files. Once the user selects one of the folders, a second selection list is displayed with all of the shortcuts within the folder. If the user selects one or more of these shortcuts, they are restored to <em>My Shortcuts</em>.</p>
+<p>By default, the folder list contains three folders in /iCloud Drive/Shortcuts/:</p>
+<ul>
+<li><strong>BART/Snapshot/</strong></li>
+<li><strong>BART/Backup/</strong></li>
+<li><strong>BART/Develop/</strong></li>
+</ul>
+<p>Any other folder in <strong>/iCloud Drive/Shortcuts/</strong> can be added to the list by adding it to a <em>List action</em> within <strong>BART</strong>. This could be useful for users that have used another means to backup and/or organize shortcut backup files. <strong>Note: All folder entries are case-sensitive!</strong></p>
+<p><img alt="" src="https://i.imgur.com/HhYFzW8.png"> <strong>Restore</strong> <em>(from a zip archive)</em> displays a list of zip archives in the <em>archive</em> folder: /iCloud Drive/Shortcuts/<strong>BART/Archive/</strong>. If a user selects one of the zip archives, the file is <em>unzipped</em> into a new subfolder in the <em>unarchive</em> folder: /iCloud Drive/Shortcuts/<strong>BART/Unarchive/</strong>. For example, if the user selected 2019-12-10-073522_#102.zip the archive would be unzipped into the following: /iCloud Drive/Shortcuts/BART/Unarchive/2019-12-10-073522_#102/. After the archive is unzipped, a second selection list is displayed with all of the shortcuts within the subfolder. If the user selects one or more shortcuts, they are restored to <em>My Shortcuts</em>.</p>
+<p><img alt="" src="https://i.imgur.com/o9BxY0B.png"> <strong>Restore</strong> <em>(from an unarchive folder)</em> displays a list of subfolders in the <em>unarchive</em> folder. If a user selects one of the subfolders, a second selection list is displayed with all of the shortcuts within the subfolder. If the user selects one or more shortcuts, they are restored to <em>My Shortcuts</em>.</p>
+<p>This restoration operation would be used to recover a shortcut that was previously archived (using <strong>Archive All</strong> or <strong>Archive Selected</strong>) and then subsequently unzipped using the <strong>Restore</strong> <em>(from a zip archive)</em> operation.</p>
+<p><img alt="" src="https://i.imgur.com/6fgDrvZ.png"> <strong>Restore One</strong> <em>(from a file browse)</em> will open a file selection dialog to allow the user to select a shortcut file. The selected shortcut will be restored to <em>My Shortcuts</em>.</p>
+<p>This restoration operation would likely be used infrequently as it is intended for files that were backed up prior to using <strong>BART</strong>. This method has the advantage of being more flexible in that the shortcut file can be located anywhere, not limited to <em>/iCloud Drive/Shortcuts/</em>. The disadvantage of this method is that only one shortcut can be selected per file browse.</p>
+<p><img alt="" src="https://i.imgur.com/HWlCWwX.png"> <strong>Help</strong> displays this information.</p>
+<hr>
+<h3>Segregating Saved Files by iOS Device</h3>
+<p>By default, all files created by <strong>BART</strong> are saved exactly as described in the above sections. This is appropriate if:</p>
+<ul>
+<li>only one iOS device is being used, or </li>
+<li>if multiple devices are being used and <a href="https://support.apple.com/guide/shortcuts/sync-shortcuts-apdb3a4240b0/ios">iCloud Sync</a> is ON for all devices (that use <strong>BART</strong>).</li>
+</ul>
+<p>Conversely in cases where multiple iOS devices are being used and <em>iCloud Sync</em> is not being used, it is recommended to segregate the <strong>BART</strong> files. This change can be made when <strong>BART</strong> is first downloaded or at anytime later using <strong>Settings</strong> -&gt; <strong>Customize Shortcut</strong>.</p>
+<p>If <em>segregation</em> is selected, the BART root folder becomes: /iCloud Drive/Shortcuts/BART/<em>device_name</em>. For example, if the device name is <strong>My iPhone</strong>, the folders mentioned in the previous section would be subfolders of <strong>/iCloud Drive/Shortcuts/</strong>:</p>
+<ul>
+<li><strong>BART/My iPhone/Snapshot/</strong></li>
+<li><strong>BART/My iPhone/Backup/</strong></li>
+<li><strong>BART/My iPhone/Archive/</strong></li>
+<li><strong>BART/My iPhone/Unarchive/</strong></li>
+<li><strong>BART/My iPhone/Develop/</strong></li>
+</ul>
+<hr>
+<h3>Shortcut and Workflow Files</h3>
+<p>Shortcut files saved to <em>iCloud Drive</em> by <strong>BART</strong> include a <em>shortcut</em> extension (e.g., xyz.shortcut). </p>
+<p>The <em>Shortcuts</em> app is an updated version of <em>Workflow</em>, a third-party iOS app that Apple acquired in 2017. Although similar, this app included <em>workflows</em>, not <em>shortcuts</em>. Workflow files included a <em>wflow</em> extension and, like shortcut files, can be restored using <strong>BART</strong>.</p>
+<hr>
+<h3>Restoring Shortcuts</h3>
+<p>With iOS 13.x, the <em>Shortcuts</em> app cannot restore/import a shortcut file directly from <em>iCloud Drive</em>. (This limitation did not exist with the iOS <em>Workflow</em> app, but may have been added by Apple for security reasons.) Therefore to restore/import a shortcut, the shortcut file must first be uploaded to iCloud (in a public area established by Apple that is reserved for shortcuts). Once uploaded, a shortcut file can then be restored/imported within Safari by opening an iCloud link (to the uploaded shortcut file).</p>
+<p><strong>BART</strong> automates the process described above. However once the link is opened in Safari, a user must complete the final step by selecting blue <em>Get Shortcut</em> button that appears on the shorcut's Safari page. Because of a limitation with the <em>Shortcuts</em> app, this final step cannot be completed if a shortcut is still running. Due to these constraints, only one shortcut can be automatically restored/imported <em>for each run</em> of <strong>BART</strong> (or any similar restoration shortcut). Therefore if the user selects more than one shortcut to restore, the first one will be restored during that run of <strong>BART</strong>; shortcuts 2 to <em>n</em> will be queued up and ready to be restored, one at a time, with each subsequent run of <strong>BART</strong>.</p>
+<hr>
+<h3>Optional Management of iCloud Folders</h3>
+<p>As mentioned above, <em>snapshot</em>, <em>backup</em>, and <em>archive</em> files are saved to <em>/iCloud Drive/Shortcuts/</em> subfolders, specifically <strong>BART/Snapshot/</strong>, <strong>BART/Backup/</strong>, and <strong>BART/Archive/</strong>, respectively. In addition, <strong>BART/Develop/</strong> houses copies of shortcuts that are modified using the <strong>Develop</strong> operation. </p>
+<p>In general, the contents of these folders are managed automatically by <strong>BART</strong>, but in some cases the contents can be managed manually using the iOS <em>Files</em> app or the macOS <em>Finder</em>. Specifically:</p>
+<ul>
+<li>
+<p>Shortcuts no longer needed but previously backed up to <strong>BART/Backup/</strong> can be manually deleted.</p>
+</li>
+<li>
+<p>Shortcuts files (*.shortcut), and even old Workflow files (*.wflow), can be manually added to <strong>BART/Backup/</strong>. These shortcuts (or workflows) can be restored using the <strong>Restore</strong> <em>(from a selected folder)</em> operation.</p>
+</li>
+<li>
+<p>As an alternative to the above bullet, old <em>Shortcuts</em> app (or <em>Workflow</em> app) backups could be managed in a separate folder(s) within <em>/iCloud Drive/Shortcuts/</em>. Files in this folder(s) can be restored using :</p>
+<ol>
+<li><strong>Restore One</strong> <em>(from a file browse)</em>.</li>
+<li><strong>Restore</strong> (from a selected folder). In this case, the <em>/iCloud Drive/Shortcuts/</em> subfolder(s) would need to be added to the folder list using the <em>List</em> action within the shortcut. This list appears near the top of <strong>BART</strong> and includes a preceding comment. <strong>Note: All folder entries are case-sensitive!</strong></li>
+</ol>
+</li>
+<li>
+<p>Unneeded zip archive files in <strong>BART/Archive/</strong> can be deleted when they are no longer needed.</p>
+</li>
+<li>
+<p>Unneeded copies of shortcuts in <strong>BART/Develop/</strong> can be deleted when they are no longer needed; however, older copies will be <em>automatically</em> purged per the <strong>Copies</strong> value when using the _Develop__ operation. See <strong>Protection While Developing or Modifying Other Shortcuts</strong> for more information.)</p>
+</li>
+<li>
+<p>Older zip archives that include <em>shortcuts</em> (or even <em>workflows</em>), that may have been created by some other means, can be manually added to <strong>BART/Archive/</strong>. <strong>BART</strong> could then be used to process these archives just as it does for the archives that it creates.</p>
+</li>
+<li>
+<p>Unarchive subfolders in <strong>BART/Unarchive/</strong> can be deleted (e.g., BART/Unarchive/2019-12-12-131131_#109). Also, shortcuts no longer needed can be individually deleted from these subfolders.</p>
+</li>
+<li>
+<p>Note: Shortcuts files can be copied <em>from</em> <strong>BART/Snapshot/</strong>, but since this folder is automatically managed by <strong>BART</strong>, the folder contents should not be modified.</p>
+</li>
+</ul>
+<hr>
+<h3>Running BART From Another Shortcut</h3>
+<p><strong>BART</strong> can be optionally started from another shortcut. This is also known as running <strong>BART</strong> in <em>Input</em> mode. This mode is useful because routine tasks can be automated and run consistently and quickly without user interaction with the <strong>BART</strong> main menu. </p>
+<p>Before continuing, download these simple, example shortcuts:</p>
+<ol>
+<li><a href="https://www.icloud.com/shortcuts/2c17a3efcd204cb4838c024546141230">Snapshpt ➤ BART</a> </li>
+<li><a href="https://www.icloud.com/shortcuts/30f1a26563d34f408a08a1f8bde01c16">Archive ALL ➤ BART</a></li>
+<li><a href="https://www.icloud.com/shortcuts/422a8dafff1541b9b61800cf2bae8faa">Back Up ➤ BART</a></li>
+<li><a href="https://www.icloud.com/shortcuts/11f1f074cc7542ba89e59e042f235bbf">Archive ➤ BART</a></li>
+</ol>
+<p><strong>Snapshpt ➤ BART</strong> and <strong>Archive ALL ➤ BART</strong> can be used as is. For the other two, <em>Duplicate</em> them to create a copy that can be modified for your use. For example, copy <strong>Archive ➤ BART</strong> and name it <strong>Archive (My Stuff) ➤ BART</strong>. Then open <strong>Archive (My Stuff) ➤ BART</strong> and continue reading.</p>
+<p>To run <strong>BART</strong> in this mode, the <em>calling</em> shortcut needs two actions: <strong>Dictionary</strong> and <strong>Run Shortcut</strong>. </p>
+<p>This <strong>Dictionary</strong> information is used by <strong>BART</strong> to determine the desired <strong>Operation</strong> (in lieu of user interaction with the <strong>BART</strong> main menu). Depending on the <strong>BART Operation</strong>, the <strong>Dictionary</strong> action must have <em>one</em> or <em>two</em> <strong>Dictionary Items</strong>: [<em>item 1:</em> Key = <strong>Operation</strong>] or [<em>item 1:</em> Key = <strong>Operation</strong>; <em>item 2:</em> Key = <strong>Shortcut</strong>].</p>
+<p>The following <em>one-item</em> <strong>BART</strong> <strong><em>Operations</em></strong> are supported:</p>
+<ul>
+<li><strong>Dictionary</strong>[<em>item 1:</em> Key = <strong>Operation</strong>, Text = <strong>Snapshot</strong>]</li>
+<li><strong>Dictionary</strong>[<em>item 1:</em> Key = <strong>Operation</strong>, Text = <strong>Archive All</strong>]</li>
+</ul>
+<p>And the following <em>two-item</em> <strong>BART</strong> <strong><em>Operations</em></strong> are also supported:</p>
+<ul>
+<li><strong>Dictionary</strong>[<em>item 1:</em> Key = <strong>Operation</strong>, Text = <strong>Back Up</strong>; <em>item 2:</em> Key = <strong>Shortcut</strong>, Text = <em>shortcut_name</em>]</li>
+<li><strong>Dictionary</strong>[<em>item 1:</em> Key = <strong>Operation</strong>, Text = <strong>Archive</strong>; <em>item 2:</em> Key = <strong>Shortcut</strong>, Text = <em>shortcut_name</em>]]</li>
+</ul>
+<p>As mentioned above, the above <strong>Dictionary</strong> action must precede the <strong>Run Shortcut</strong> action (specifically <strong>Run[BART]</strong>).</p>
+<p>Note 1: In the second group of <strong>BART Operations</strong>, a third key [Key = <strong>Shortcuts</strong>] can replace the second key [Key = <strong>Shortcut</strong>]. This must be employed when <em>backing up</em> or <em>archiving</em> more than <em>one</em> shortcut with a single <strong>Dictionary</strong>/<strong>Run[BART]</strong> pair. In this case, the <strong>Dictionary</strong> <em>item</em> must be an <strong>Array</strong>, with Key = <strong>Shortcuts</strong>, and the <em>shortcut_names</em> are entered as separate <strong>Text</strong> array <em>items</em>.</p>
+<p>Note 2: If the <strong>Dictionary</strong> includes <strong>Shortcut</strong> (Text Key for <strong>1</strong> <em>shortcut_name</em>) and <strong>Shortcuts</strong> (Array Key for <strong>1 or more</strong> <em>shortcut_names</em>), all <em>shortcut names</em> will be used by <strong>BART</strong>.</p>
+<hr>
+<h3>Shortcut Automation</h3>
+<p>The shortcuts mentioned in the previous section, <strong>Running BART From Another Shortcut</strong>, are great candidates for the <em>Shortcuts</em> app <strong>Automation</strong>, also known as <a href="https://support.apple.com/guide/shortcuts/intro-to-personal-automation-apd690170742/ios">personal automation</a> in the <a href="https://support.apple.com/guide/shortcuts/welcome/ios">Shortcuts User Guide</a>. As an example in the two following videos, <strong>Archive ➤ BART</strong> is used to demonstrate how a full archive can be executed at 11:30/pm everyday.</p>
+<ul>
+<li><a href="https://youtu.be/JP7yBttYIXs">Configuring BART Automation</a></li>
+<li><a href="https://youtu.be/_vWkivP_EZc">Running BART Automation</a></li>
+</ul>
+<hr>
+<h3>Protection While Developing or Modifying Other Shortcuts</h3>
+<p><strong>BART</strong> <em>Input</em> mode <em>operations</em> are discussed in a section above: <strong>Running BART From Another Shortcut</strong>. <strong>BART</strong> includes one additional <em>operation</em>: <strong>Develop</strong>. This operation, however, is unique in that it is <em>not available</em> when running <strong>BART</strong> interactively.</p>
+<p><strong>Develop</strong> is used to save a copy of a shortcut to the <em>develop</em> folder (/iCloud Drive/Shortcuts/<strong>BART/Develop/</strong>) and then open the shortcut in the <em>Shortcut</em> app editor. Then, if needed (e.g., if a large block of actions is mistakenly deleted during the editing session), the saved copy can be restored using <strong>BART</strong> interactively (using <strong>Restore from selected folder</strong>).</p>
+<p>Before continuing, with the following shortcut, download, <em>Duplicate</em>, and open your copy: </p>
+<ul>
+<li><a href="https://www.icloud.com/shortcuts/ce4de6396e9f43c8be587254ba1929b2">Develop ➤ BART</a></li>
+</ul>
+<p>Note that this is an example that specifies three shortcuts: <strong>Brush Teeth Timer</strong>, <strong>Log Water</strong>, <strong>Tea Timer</strong>, selected in the example simply because they are available in the <em>Shortcuts</em> app <em>Gallery</em>. In the <strong>Dictionary</strong> action:</p>
+<ul>
+<li><em>item 1:</em> Key = <strong>Operation</strong>, Text = <strong>Develop</strong> </li>
+<li><em>item 2:</em> Key = <strong>Shortcut</strong>, Text = <strong>Log Water</strong></li>
+<li><em>item 3:</em> Key = <strong>Shortcuts</strong> (an <em>Array</em>), <em>item 1:</em> = <strong>Log Water</strong></li>
+<li><em>item 4:</em> Key = <strong>Copies</strong>, Number = <em>n</em></li>
+<li><em>item 5:</em> Key = <strong>Notify</strong>, Number = <strong>0</strong> or <strong>1</strong> (for <strong>No</strong> or <strong>Yes</strong>)</li>
+</ul>
+<p><strong>BART</strong> combines the single name in <strong>Shortcut</strong> key with the one or more names in <strong>Shortcuts</strong> key. After the keys are combined, if the list contains more than one shortcut name, <strong>BART</strong> will generate a <strong>Choose from List</strong> so that the shortcut of interest at that particular time can be selected. This is helpful if there is a set of shortcuts that are regularly opened in the <em>Shortcuts</em> app editor.</p>
+<p>If only one shortcut name is specified, then <strong>BART</strong> will copy the shortcut and open it in the editor, i.e., the <strong>Choose from List</strong> will not appear.</p>
+<p><em>PRO Tip: One can specify commonly edited shortcuts in the __Shortcuts__ key. Then in a case where there will be many editing sessions with one shortcut, the __Shortcut__ key could be used and the __Shortcuts__ key could be renamed to __xShortcuts__. That way, the __Choose from List__ would be bypassed during the focused work on the single shortcut.</em></p>
+<p>The <strong>Copies</strong> key defines how many copies of a shortcut will be retained in the <em>develop</em> folder. If this key is not specified, the default value (defined in <strong>BART</strong>) will be used. Older copies in excess of this setting will be automatically deleted from the <em>develop</em> folder.</p>
+<p>The <strong>Notify</strong> key determines if <strong>BART</strong> will generate a notification when the shortcut is copied. If this key is not specified, <strong>BART</strong> will use its <strong>Suppress Notifications?</strong> Configuration Parameter to determine if a notification should be generated. </p>
+<hr>
+<h3>iOS 14.5 Write Error</h3>
+<p>With iOS 14.5, Apple introduced a new bug that generates an error when some shortcuts are written to the local <em>iCloud Drive</em>:</p>
+<blockquote>
+<p><strong>An error occurred in the destination for the data.</strong>
+The data couldn't be written because of a error in the destination for the data.</p>
+</blockquote>
+<p>If this error is observed during <strong>BART</strong> bakups and archives, download and run <a href="https://routinehub.co/shortcut/9007/">Identify iOS 14.5 Problematic Shortcuts</a>. When all of the problematic shortcuts are identified, the names will be written to a file named <strong>Shortcuts • Error Saving.txt</strong> (folder: <strong>/iCloud Drive/Shortcuts/
+Identify iOS 14.5 Problematic Shortcuts/</strong>). Once this file is created, <strong>BART</strong> will use it and exclude the problematic shortcuts.</p>
+<p>Since entries in <strong>Shortcuts • Error Saving.txt</strong> will not be saved by <strong>BART</strong>, you might want to manually back up these shortcuts using <a href="https://support.apple.com/guide/shortcuts/share-shortcuts-apdf01f8c054/ios">Copy iCloud Link</a> and saving the links (https://www.icloud.com/shortcuts/<em>shortcut ID</em>) for use in the event it becomes necessary to restore one of the problematic shortcuts.</p>
+<p>If/when Apple addresses this bug, <strong>BART</strong> will be modified to ignore <strong>Shortcuts • Error Saving.txt</strong>.</p>
+<hr>
+<h3>Shortcut Testing</h3>
+<p><a href="https://routinehub.co/shortcut/4069">BART</a>, Version 3.0, has been tested with the following:</p>
+<ul>
+<li>iOS 14.6 beta 2</li>
+<li>iPhone 8 Plus</li>
+<li>iPad Pro 10.5"</li>
+<li><em>Shortcuts</em> app Libraries exceeding 1000 shortcuts </li>
+</ul>
+<hr>
+<h3>Shortcut Development and Acknowledgments</h3>
+<ul>
+<li>
+<p><strong>BART</strong> is available exclusively at <a href="https://routinehub.co">RoutineHub.co</a>. Versions obtained elsewhere might be out-of-date.</p>
+</li>
+<li>
+<p>The framed screenshots were created using the shortcut <strong>Apple Frames (iOS)</strong> from the <a href="https://www.macstories.net/shortcuts/">MacStories Shortcuts Archive</a>.</p>
+</li>
+<li>
+<p>The menus in this shortcut use Apple <a href="https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/">SF Symbols</a> that were encoded using another shortcut <a href="https://routinehub.co/shortcut/4254">SF Symbol for vCard Menu</a>. That shortcut uses the <em>Create Icon</em> action included in the premium version of <a href="https://toolboxpro.app">Toolbox Pro</a>.</p>
+</li>
+<li>
+<p><strong>BART</strong> checks for updates of itself every 7 days using <a href="https://routinehub.co/shortcut/2672">Embed-a-Update</a> (Version: 1.1.2, Updated: 10/13/19).</p>
+</li>
+</ul>
+</div>
+</div>
+<hr>
+<div class="latest-release">
+<h4 class="title is-4">Latest Release Notes</h4>
+<p><strong>3.1 - May 8, 2021, 4:06 p.m.</strong></p>
+<p>Significantly sped up ‘Save Snapshot…’ by changing the method of deleting old files.</p>
+<br>
+<a href="changelog.html" class="button is-dark">Version history</a>
+</div>
+<hr>
+<div class="feedback">
+<h4 class="title is-4">Feedback</h4>
+<br>
+<article class="media" data-feedback-id="4530">
+<div class="media-content">
+<a href="https://routinehub.co/user/healey"><strong>@healey</strong></a>
+<div class="content">
+<span class="body">This is fantastic! I’ll definitely be using this for shortcut management. Excellent work!</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 12 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="4532">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">@healey, glad you like it. Please let me know if you find any issues. Thanks!</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 12 months ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+<article class="media" data-feedback-id="4533">
+<div class="media-content">
+<a href="https://routinehub.co/user/daidardi"><strong>@daidardi</strong></a>
+<div class="content">
+<span class="body">I can’t get the reason for creating an awesome menù and not creating a “exit” (or/and restart) choose.
+Often SC had started from other one. Without exit button Shortcut App stop every action.. :/</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 12 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="4534">
+<div class="media-content">
+<a href="https://routinehub.co/user/daidardi"><strong>@daidardi</strong></a>
+<div class="content">
+<span class="body">Then.. second thought...
+It’s a great idea “dictionary input” but SC needs to skip menù and acting in background..</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 12 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="4537">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">@daidardi, thanks for the comments. Regarding your first...
+The build-in &#x27;Canel&#x27; button serves the same purpose as an &#x27;Exit&#x27; button. Download the shortcut and give it a try.
+Regarding your second...
+See the &#x27;Running BART From Another Shortcut&#x27; section. When you use this method, the main menu is bypassed.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 12 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="4538">
+<div class="media-content">
+<a href="https://routinehub.co/user/daidardi"><strong>@daidardi</strong></a>
+<div class="content">
+<span class="body">I know, but it stop all Shortcut app’s action.
+My “example-N” SC runs:
+-example1
+-BART
+-example3
+When I tap “cancel” all SC has stopped.
+Example3 will never be started :/
+For starting from “another Shortcut” I tried your example.. and it goes into the menu.. :/
+https://i.imgur.com/rlOqwbZ.mp4</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 12 months ago</small>
+
+</div>
+</div>
+</article>
+<article class="media" data-feedback-id="4539">
+<div class="media-content">
+<a href="https://routinehub.co/user/daidardi"><strong>@daidardi</strong></a>
+<div class="content">
+<span class="body">I wrote you on reddit.. you read there I’ll can explain better
+It’s what I did... but it goes into the menu
+https://www.icloud.com/shortcuts/0c1aa874f2c944fe9000d1b5c1155bca</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 12 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="4541">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">I just downloaded your example shortcut (#Auto-BART) -- for me, it creates the snapshot WITHOUT displaying the main BART menu: https://imgur.com/a/jpOENHQ
+I&#x27;m not sure why you are seeing otherwise.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 12 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="4546">
+<div class="media-content">
+<a href="https://routinehub.co/user/daidardi"><strong>@daidardi</strong></a>
+<div class="content">
+<span class="body">Uninstalling and downloading again it continue to not working?!
+iOS ver?
+I got 13.3</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 12 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="4550">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">iOS 13.3 (17C54) on an iPhone 8 Plus and iPad Pro 10.5&quot;. I&#x27;m on the Pubic beta program for my iPad but at the moment it appears that 13.3 (17C54) is the latest available for both platforms.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 12 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="4552">
+<div class="media-content">
+<a href="https://routinehub.co/user/daidardi"><strong>@daidardi</strong></a>
+<div class="content">
+<span class="body">Me too on beta</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 12 months ago</small>
+
+</div>
+</div>
+</article>
+<article class="media" data-feedback-id="4553">
+<div class="media-content">
+<a href="https://routinehub.co/user/daidardi"><strong>@daidardi</strong></a>
+<div class="content">
+<span class="body">It continues to go on menu.. :/</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 12 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="4557">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">I suspect this might be a localization issue. Please download this test version of BART (which includes a strategically placed &#x27;Quick Look&#x27;) and this test version of its calling shortcut. Run the latter and then please post a screenshot of the &#x27;Quick Look&#x27; output. [ https://www.icloud.com/shortcuts/43b148b84cdc4bb3921ef4f53d022174 ] [ https://www.icloud.com/shortcuts/3335e6dbbff1474ba24dc81231e320ba ] Thanks. Here&#x27;s what I see: https://i.imgur.com/LpjOfX0.png</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 12 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="4558">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">@daidardi, please download v1.1.1. I think you will find that the issue you reported has been fixed. Thanks for bringing this issue to my attention and reporting your test results. I&#x27;l make a similar change to [Run Without Showing Actions](https://routinehub.co/shortcut/3700).</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 12 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="4583">
+<div class="media-content">
+<a href="https://routinehub.co/user/daidardi"><strong>@daidardi</strong></a>
+<div class="content">
+<span class="body">Great. Now it works.
+For RWSA I’ll try tomorrow! </span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 11 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="4665">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">Thanks for the feedback.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 11 months ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+<article class="media" data-feedback-id="4584">
+<div class="media-content">
+<a href="https://routinehub.co/user/daidardi"><strong>@daidardi</strong></a>
+<div class="content">
+<span class="body">I wrote to right contact!
+https://imgur.com/a/tzeSt6f</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 11 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="4663">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">Thanks for the information. I’ve replied via a reddit chat.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 11 months ago</small>
+
+</div>
+</div>
+</article>
+<article class="media" data-feedback-id="4664">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">Thanks for the information. I’ve replied via a reddit chat.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 11 months ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+</div>
+</article>
+</div>
+</article>
+</div>
+</article>
+</div>
+</article>
+</div>
+</article>
+</div>
+</article>
+<article class="media" data-feedback-id="4551">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">@daidardi - I didn&#x27;t see anything on Reddit. My username is: u/_jimsauer</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 12 months ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+</div>
+</article>
+</div>
+</article>
+<article class="media" data-feedback-id="5283">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">FYI -- I modified BART and added &#x27;Exit&#x27; to the main menu. I really wanted to limit the main menu to the size of my iPhone 8 Plus, thus I removed the &#x27;Check for Update&#x27; item. BART automatically checks for a new update every 7 days, so this menu item wasn&#x27;t as important as all of the others.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 10 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="5293">
+<div class="media-content">
+<a href="https://routinehub.co/user/daidardi"><strong>@daidardi</strong></a>
+<div class="content">
+<span class="body">Great! </span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 10 months ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+</div>
+</article>
+<article class="media" data-feedback-id="4540">
+<div class="media-content">
+<a href="https://routinehub.co/user/ItsChris"><strong>@ItsChris</strong></a>
+<div class="content">
+<span class="body">This is cool! Thanks for creating this shortcut!</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 12 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="4542">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">@ChrisChan, glad you like it. I see that you contributed many great shortcuts to RoutineHub -- including iUtilities. Thanks for your hard work.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 12 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="4543">
+<div class="media-content">
+<a href="https://routinehub.co/user/ItsChris"><strong>@ItsChris</strong></a>
+<div class="content">
+<span class="body">Thank you! You too, “Let’s Share Shortcut Techniques!” Is very good!</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 12 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="4548">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">Thanks, I need to update that next. :-) Maybe after Christmas.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 12 months ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+</div>
+</article>
+</div>
+</article>
+<article class="media" data-feedback-id="4545">
+<div class="media-content">
+<a href="https://routinehub.co/user/unbeatable101"><strong>@unbeatable101</strong></a>
+<div class="content">
+<span class="body">Nice job</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 12 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="4549">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">@unbeatable101, thanks for the comment.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 12 months ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+<article class="media" data-feedback-id="7126">
+<div class="media-content">
+<a href="https://routinehub.co/user/elio27"><strong>@elio27</strong></a>
+<div class="content">
+<span class="body">Very good job ! I get regularly a corrupt database so it will be useful !</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 5 months ago</small>
+
+</div>
+</div>
+</article>
+<article class="media" data-feedback-id="7127">
+<div class="media-content">
+<a href="https://routinehub.co/user/elio27"><strong>@elio27</strong></a>
+<div class="content">
+<span class="body">Very good job ! I get regularly a corrupt database so it will be useful !</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 5 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="7133">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">Thanks for the positive comment. It can be very disconcerting when you see the “Corrupt Database” message. Fortunately for me, with recent versions of IOS, the ‘My Shortcuts’ Library has recovered automatically after I force quit Shortcuts, return to the app, and wait a few minutes. But even when you get lucky and the shortcuts return automatically, the stress level is much lower if you know you have a recent back up.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 5 months ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+<article class="media" data-feedback-id="7224">
+<div class="media-content">
+<a href="https://routinehub.co/user/daidardi"><strong>@daidardi</strong></a>
+<div class="content">
+<span class="body">Hi!
+OT: you can write more text in description and into update notes.. how you do it?</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 5 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="7257">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">With shortcuts. See below.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 5 months ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+<article class="media" data-feedback-id="7250">
+<div class="media-content">
+<a href="https://routinehub.co/user/daidardi"><strong>@daidardi</strong></a>
+<div class="content">
+<span class="body">Do you use some specific tool/app/site or you make it manually?!
+https://imgur.com/a/ip6cOZq</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 5 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="7262">
+<div class="media-content">
+<a href="https://routinehub.co/user/daidardi"><strong>@daidardi</strong></a>
+<div class="content">
+<span class="body">I’ll try! Thanks</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 5 months ago</small>
+
+</div>
+</div>
+</article>
+<article class="media" data-feedback-id="7263">
+<div class="media-content">
+<a href="https://routinehub.co/user/daidardi"><strong>@daidardi</strong></a>
+<div class="content">
+<span class="body">Maybe I didn’t explain good. I didn’t mean “font changing” but creating text mixing characters... as in screen
+https://imgur.com/a/ip6cOZq</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 5 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="7268">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">Oh, sorry, that was my fault. For those comments, I just typed them in manually and saved a copy of each in a shortcut name &#x27;Template of Comments&#x27;. Here it is: https://bit.ly/2C7ShNH</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 4 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="7277">
+<div class="media-content">
+<a href="https://routinehub.co/user/daidardi"><strong>@daidardi</strong></a>
+<div class="content">
+<span class="body">Thnks</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 4 months ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+</div>
+</article>
+</div>
+</article>
+</div>
+</article>
+<article class="media" data-feedback-id="7251">
+<div class="media-content">
+<a href="https://routinehub.co/user/daidardi"><strong>@daidardi</strong></a>
+<div class="content">
+<span class="body">Backup &gt; 1
+All selection doesn’t work
+https://imgur.com/gallery/g6RqcKR</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 5 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="7255">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">Thanks for reporting this bug. This has been fixed in version 2.3.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 5 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="7261">
+<div class="media-content">
+<a href="https://routinehub.co/user/daidardi"><strong>@daidardi</strong></a>
+<div class="content">
+<span class="body">;)</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 5 months ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+</div>
+</article>
+<article class="media" data-feedback-id="7834">
+<div class="media-content">
+<a href="https://routinehub.co/user/unbeatable101"><strong>@unbeatable101</strong></a>
+<div class="content">
+<span class="body">The SF symbols show in Beta 5</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 3 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="7840">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">Yes! I&#x27;ve updated BART to v2.6 and updated the iOS 14 Beta notes.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 3 months ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+<article class="media" data-feedback-id="8197">
+<div class="media-content">
+<a href="https://routinehub.co/user/tbb"><strong>@tbb</strong></a>
+<div class="content">
+<span class="body">This has 2020 downloads!</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 2 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="8243">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">:-)</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 2 months ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+<article class="media" data-feedback-id="8255">
+<div class="media-content">
+<a href="https://routinehub.co/user/ravedog"><strong>@ravedog</strong></a>
+<div class="content">
+<span class="body">I grabbed the latest today and the 5 companion shortcuts. When I run Bart itself, everything works. However, when I run Snapshot &gt; BART or archive all, then run in about 5 seconds and display some JSON in the result window but nothing gets done. iPad iOS 14. Any ideas?</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 2 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="8261">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">@ravedog, thank you very much for reporting this issue. I&#x27;ve corrected it in version 2.8. When you have time, please give it a try and let me know if you observe any issues. (FYI: During one of the early iOS 14 beta releases, the &#x27;Change Case&#x27; action did not properly convert to UPPERCASE. I had temporarily made a [poor] change to workaround that issue. The good news is that the &#x27;Change Case&#x27; action works properly in iOS 14 and, thanks to you, so should BART.)</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 2 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="8283">
+<div class="media-content">
+<a href="https://routinehub.co/user/ravedog"><strong>@ravedog</strong></a>
+<div class="content">
+<span class="body">Ah-ha! So I’m NOT crazy. At least not on this issue! No no, thank YOU for getting to this.
+On a side note, I’m having tons of shortcuts issues in a lot of my stuff too. Variables that are set that end up blank (no reference). If statements that literally don’t work with correct criteria (fix it by creating one again. Exactly the same way). Show preview broken. Tons of fun.
+Thank you for jumping on this! I’m so grateful for your work!</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 2 months ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+ </div>
+</article>
+<article class="media" data-feedback-id="8452">
+<div class="media-content">
+<a href="https://routinehub.co/user/ravedog"><strong>@ravedog</strong></a>
+<div class="content">
+<span class="body">Jim, can you pm me on reddit? Same username.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 2 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="8706">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">@ravedog, again sorry for the delay. I just sent you a reddit PM.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 2 months ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+<article class="media" data-feedback-id="9371">
+<div class="media-content">
+<a href="https://routinehub.co/user/ravedog"><strong>@ravedog</strong></a>
+<div class="content">
+<span class="body">Jim, q: does the latest BART check when run for updates because I’m so used to it being a menu item.... and there is none (to check manually)</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 1 month ago</small>
+
+</div>
+<article class="media" data-feedback-id="9465">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">When BART is run interactively, it will automatically check for a new version of itself. If launch BART from another shortcut it will not check for an update. I will add that disclaimer to the description above. BTW, you check the version of BART two ways: 1) display the HELP and scroll down to the &#x27;Shortcut Testing&#x27; section, or 2) open BART in the Shortcuts app editor and check the &#x27;RoutineHub Version&#x27; in the dictionary found near the top.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 1 month ago</small>
+
+</div>
+<article class="media" data-feedback-id="9467">
+<div class="media-content">
+<a href="https://routinehub.co/user/ravedog"><strong>@ravedog</strong></a>
+<div class="content">
+<span class="body">Nice! Thanks.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 1 month ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+</div>
+</article>
+<article class="media" data-feedback-id="9372">
+<div class="media-content">
+<a href="https://routinehub.co/user/ravedog"><strong>@ravedog</strong></a>
+<div class="content">
+<span class="body">Hey Jim. So I’m having some issues with regards to running archive all and snapshots as automation. I have a single automation that runs at a certain time that runs two shortcuts: your archive all and snapshots. Problem is that it runs one flawlessly then the next one gets a “Tap to Respond” notification. If I don’t see that it never runs. Why one runs without any interaction and the other doesn’t is weird. I have your setting to suppress interactions on so it’s not that.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 1 month ago</small>
+
+</div>
+<article class="media" data-feedback-id="9373">
+<div class="media-content">
+<a href="https://routinehub.co/user/ravedog"><strong>@ravedog</strong></a>
+<div class="content">
+<span class="body">FYI this automation has “ask before running” turned off so it’s not that.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years, 1 month ago</small>
+
+</div>
+</div>
+</article>
+<article class="media" data-feedback-id="9489">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">I&#x27;m testing with iOS 14.2. It appears that any shortcut that generates an alert and is launched via an Automation (within the Shortcuts app) will generate that &quot;Tap to Respond&quot; notification. I&#x27;m not sure why iOS fails to execute subsequent &#x27;Run&#x27; actions in the Automation, but my testing indicates that this occurs with any shortcut with an alert, not just BART.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years ago</small>
+
+</div>
+<article class="media" data-feedback-id="9490">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">It would be possible to create another option to suppress alerts, but I hesitate to do this because I think it is important to provide feedback when BART completes a specified operation.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+<article class="media" data-feedback-id="9491">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">I suggest that you create two Automations, one for each execution of BART. Note that I&#x27;ve seen some Shortcuts app errors when the Automations launch at the exact same time, thus I suggest that the two Automations be separated by a few minutes.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 2 years ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+<article class="media" data-feedback-id="11466">
+<div class="media-content">
+<a href="https://routinehub.co/user/unbeatable101"><strong>@unbeatable101</strong></a>
+<div class="content">
+<span class="body">This just became the best backup shortcut</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 8 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="11482">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">@unbeatable101, thanks for the comment. Funny, I was just preparing to put a comment in the /Shortcuts subreddit to remind everyone to back-up their shortcuts. Unfortunately for several revisions of iOS, the BART RESTORE process still relies on iCloud links . (Prior to Apple&#x27;s iOS change, BART, and its predecessor I had created for Workflow, could restore shortcuts/workflows directly from the files.) But there is certainly still great comfort knowing that you have control of your local back-ups.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 8 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="11483">
+<div class="media-content">
+<a href="https://routinehub.co/user/unbeatable101"><strong>@unbeatable101</strong></a>
+<div class="content">
+<span class="body">iirc new links were still working, so you could still get your shortcuts during the outages</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 8 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="11485">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">True, but if Apple temporarily &quot;lost&quot; the old shortcuts, future problems could include new uploads. With that said, I&#x27;m glad to have my shortcuts backed up locally and I&#x27;m still hopeful that Apple may bring back the capability to restore from local files. (Fingers crossed!)</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 8 months ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+<article class="media" data-feedback-id="11484">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">Just to clarify -- with the Shortcuts app, Apple does not permit a direct import from a shortcut FILE. Therefore, BART uses (is forced to use) this process: RESTORE request -&gt; 1) BART uploads the local backup to Apple&#x27;s iCloud (reserved for shortcuts), 2) BART restores the shortcut by downloading from the iCloud link. After the restore, the iCloud link is no longer needed.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 8 months ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+</div>
+</article>
+<article class="media" data-feedback-id="11763">
+<div class="media-content">
+<a href="https://routinehub.co/user/blue"><strong>@blue</strong></a>
+<a href="/membership/">
+<span class="tag is-primary">Member</span>
+</a>
+<div class="content">
+<span class="body">Absolutely incredible!
+At least at this moment, this should be the most popular Shortcut on the site.
+Thanks to you, I was able to actually save a backup of my Shortcuts for the first time this year (I think.)
+Excellent and infinitely-appreciated work that *you should not have to do*.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 7 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="11764">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">@blue, thanks or the comment. This is far from ideal, but I think it is the best I can do until Apple addresses this bug. Until they do, many shortcuts will be adversely affected. Unfortunately the &quot;helper&quot; for the iOS app MFCDeck is also affected.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 7 months ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+<article class="media" data-feedback-id="11839">
+<div class="media-content">
+<a href="https://routinehub.co/user/organicaudio"><strong>@organicaudio</strong></a>
+<div class="content">
+<span class="body">*slow clap* that bug has been the source of much frustration for me. But looking at what you have in terms of options here I might just delete all my variations and go with yours. I take it from reading your lengthy guide that the shortcut can run in a headless silent mode? Basically before the bug, I&#x27;d have a backup run every day at the sunrise trigger. then throw in a call to a Console log documenting what it did</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 7 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="11843">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">&gt; can run in a headless silent mode?
+@organicaudio, yes. I suggest you read and follow these sections: 1. iOS 15.5 Write Error, 2.Running BART From Another Shortcut [including download &#x27;Archive ALL ➤ BART&#x27;], and 3. Shortcut Automation.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 7 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="11847">
+<div class="media-content">
+<a href="https://routinehub.co/user/organicaudio"><strong>@organicaudio</strong></a>
+<div class="content">
+<span class="body">Perfect thanks! I hadn&#x27;t had a chance to completely read your documentation. Your detail is definitely not the standard and I appreciate it. It was my morning read over coffee this morning... right before I deleted all my self made bookmark shortcuts that have been crashing :)</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 7 months ago</small>
+
+</div>
+<article class="media" data-feedback-id="11850">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">@organicaudio, you&#x27;re welcome. If you have any follow-up questions after giving it a try, please don&#x27;t hesitate to ask.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 7 months ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+</div>
+</article>
+<article class="media" data-feedback-id="11844">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">@organicaudio, for automation I suggest that you start with &#x27;Archive ALL ➤ BART&#x27; because archiving is currently the fastest method to save all of your shortcuts. &#x27;Snapshpt ➤ BART&#x27; will be faster when I release the next minor release of BART. (I&#x27;m currently testing it.)</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 7 months ago</small>
+
+</div>
+</div>
+</article>
+<article class="media" data-feedback-id="11864">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">I&#x27;ve uploaded BART v3.1. With this version &#x27;Snapshpt ➤ BART&#x27; will be much faster, but &#x27;Archive ALL ➤ BART&#x27; is still the fastest (because all shortcuts are combined into one zip file before written to the iCloud Drive).</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 7 months ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+<article class="media" data-feedback-id="12267">
+<div class="media-content">
+<a href="https://routinehub.co/user/Rocky5"><strong>@Rocky5</strong></a>
+<div class="content">
+<span class="body">Nice update.
+Glad someone used it 😂 been sitting on reddit for a few month now.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year, 6 months ago</small>
+
+</div>
+</div>
+</article>
+<article class="media" data-feedback-id="14478">
+<div class="media-content">
+<a href="https://routinehub.co/user/arizonajohn"><strong>@arizonajohn</strong></a>
+<div class="content">
+<span class="body">Hello, will this shortcut be updated to support iOS 15? It appears to be broken now since the new update came out.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year ago</small>
+
+</div>
+<article class="media" data-feedback-id="14481">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">Hi @arizonajohn. As noted in the sidebar and stated in the Description, BART was tested with iOS 14.x. With earlier major iOS updates, I worked hard to test and, if necessary, modify shortcuts that I shared. But since Apple made fundamental changes with iOS 15 that broke countless shortcuts and introduced several bugs that cause the shortcut editor to frequently crash, I&#x27;ve temporarily stopped developing shortcuts. Sorry!</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 year ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+<article class="media" data-feedback-id="20256">
+<div class="media-content">
+<a href="https://routinehub.co/user/Calion"><strong>@Calion</strong></a>
+<div class="content">
+<span class="body">I’m using Develop-&gt;BART, and it will only show three shortcuts in its list even if I have more specified. Is this a limitation in the shortcut, or am I doing something wrong?</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 month, 2 weeks ago</small>
+
+</div>
+<article class="media" data-feedback-id="20257">
+<div class="media-content">
+<a href="https://routinehub.co/user/Calion"><strong>@Calion</strong></a>
+<div class="content">
+<span class="body">Ah. I figured it out: Shortcut names are case-sensitive. Probably better if they weren’t.</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 month, 2 weeks ago</small>
+
+</div>
+<article class="media" data-feedback-id="20539">
+<div class="media-content">
+<a href="https://routinehub.co/user/JimSauer"><strong>@JimSauer</strong></a>
+<span class="tag is-success is-rounded">Author</span>
+<div class="content">
+<span class="body">Hi @Calion. Glad you discovered the problem. As I&#x27;ve stated above, with all of the Shortcuts app changes (and instability), I&#x27;ve regrettably stopped supporting BART and several other complex Shortcuts that I&#x27;ve created and shared. Some still work (or at least partially), but others do not. I made early attempts to address the issues, but the constant crashes (and/or bugs) of the Shortcuts app have made it impractical. 🙁</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 month, 1 week ago</small>
+
+</div>
+<article class="media" data-feedback-id="20619">
+<div class="media-content">
+<a href="https://routinehub.co/user/Calion"><strong>@Calion</strong></a>
+<div class="content">
+<span class="body">I don&#x27;t blame you, but it&#x27;s sad, as your shortcuts are awesome!</span>
+<br>
+<small><a class="reply-feedback">Reply</a> · 1 month, 1 week ago</small>
+
+</div>
+</div>
+</article>
+</div>
+</article>
+</div>
+</article>
+</div>
+</article>
+</div>
+</div>
+</div>
+</div>
+</section>
+</body>
+</html>

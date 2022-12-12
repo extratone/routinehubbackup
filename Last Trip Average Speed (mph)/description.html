@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" class="shortcut">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Calculates the average speed of the most recent trip in Drivey, displays and logs the result.">
+<meta property="og:url" content="/shortcut/10953/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="RoutineHub - Last Trip Average Speed (mph)" />
+<meta property="og:description" content="Calculates the average speed of the most recent trip in Drivey, displays and logs the result." />
+<meta property="og:image" content="https://s3.us-west-002.backblazeb2.com/routinehub/media/shortcuts/icons/4acf31b1002e404ba15b0900b49d1dc0.webp" />
+<meta name="twitter:card" content="summary" />
+<title>RoutineHub • Last Trip Average Speed (mph)</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono&display=swap" rel="stylesheet">
+<link href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/shortcut-icons/ios12-glyphs.png">
+<link href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/shortcut-icons/ios13-glyphs.png">
+<link href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/shortcut-icons/ios14-glyphs.png">
+<link href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/shortcut-icons/ios15-glyphs.png">
+<link rel="stylesheet" type="text/css" href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/main.37.css" />
+<link rel="stylesheet" type="text/css" href="https://s3.us-west-002.backblazeb2.com/routinehub/static/main/vendors/fancybox/jquery.fancybox.min.css" />
+</head>
+<body>
+<div class="message pop-up">
+<div class="message-header">
+<p class="message-title"></p>
+<button class="delete" aria-label="delete"></button>
+</div>
+<div class="message-body"></div>
+</div>
+<section id="content" class="section">
+<div class="container">
+<article class="media shortcut-header">
+<figure class="media-left">
+<div class="shortcut-icon s64 
+								ios15 
+								c4274264319 
+								g61453">
+</div>
+</figure>
+<div class="media-content">
+<div class="content">
+<div class="titles">
+<h3 class="title is-3">Last Trip Average Speed (mph)</h3>
+<h4 class="subtitle is-4">Calculates the average speed of the most recent trip in Drivey, displays and logs the result.</h4>
+</div>
+</div>
+</article>
+<hr>
+<div class="columns">
+<div class="column sidebar is-2">
+<div class="actions">
+<a href="https://www.icloud.com/shortcuts/4acf31b1002e404ba15b0900b49d1dc0" class="button is-dark is-fullwidth">Get Shortcut</a>
+</div>
+<br>
+<div class="heart has-text-centered" data-id="10953">
+<span class="heart-icon ">
+♥️
+</span>
+<span class="heart-count">1</span>
+</div>
+<br>
+<br>
+<p class="is-size-5"><strong>Information</strong></p>
+<div class="information">
+<p>Author:
+<a href="https://routinehub.co/user/blue"><strong>@blue</strong></a>
+<a href="/membership/">
+<span class="tag is-primary">Member</span>
+</a>
+<p>Version: 1.0</p>
+<p>iOS: 15</p>
+<p>Updated: 01/28/22</p>
+<p>Downloads: 72</p>
+<p>Categories:</p>
+<ul class="fa-ul">
+<li>
+<a href="https://routinehub.co/category/navigation/">
+<span class="fa-li">
+<i class="fas fa-map-marker-alt"></i>
+</span>
+Navigation
+</a>
+</li>
+<li>
+<a href="https://routinehub.co/category/travel/">
+<span class="fa-li">
+<i class="fas fa-plane"></i>
+</span>
+Travel
+</a>
+</li>
+</ul>
+</div>
+<hr>
+<p class="is-size-5"><strong>Required Apps</strong></p>
+<div class="apps columns is-mobile is-multiline">
+<div class="column is-3-mobile is-4-tablet">
+<a href="https://itunes.apple.com/us/app/id1590360678">
+<figure class="image app is-square">
+<img src="https://is5-ssl.mzstatic.com/image/thumb/Purple116/v4/9d/76/08/9d76084f-f590-2e0b-bfe5-5404f5a812bd/source/60x60bb.jpg" alt="Icon for Drivey" title="Drivey">
+</figure>
+</a>
+</div>
+</div>
+<hr>
+<div class="qr-code has-text-centered is-hidden-mobile">
+<img src="https://api.qrserver.com/v1/create-qr-code/?data=https://routinehub.cohttps://www.icloud.com/shortcuts/4acf31b1002e404ba15b0900b49d1dc0" alt="QR Code for downloading Last Trip Average Speed (mph)" />
+<p class="is-size-7"><em>Scan using your iPhone's camera to download</em></p>
+</div>
+</div>
+<div class="column is-10 details">
+<div class="description">
+<h4 class="title is-4">Description</h4>
+<div class="content">
+<p><img alt="DriveySide-by-Side" src="https://user-images.githubusercontent.com/43663476/151585041-838746ff-c646-45ff-8e82-c55681f692f3.png"></p>
+<p><a href="https://user-images.githubusercontent.com/43663476/151585091-7e28c94f-7cda-496b-8b6f-d97bd46f372c.MOV"><strong>V i d e o D e m o</strong></a></p>
+<p>Using exclusively native actions, this shortcut calculates the average speed of your last drivey trip in miles per hour.
+1. Uses the difference between the two results provided by Drivey’s <code>Get time stamps</code> action to calculate the total time elapsed in seconds. <em>(This doesn’t appear to make it any more accurate because Drivey seems to natively return the result in minutes as its smallest unit.)</em>
+2. Divides the result of Drivey’s <code>Get last trip distance</code> action by said time elapsed.
+3. The result (in miles per second) is multiplied by 3600 to calculate the desired output in miles per hour.
+4. The output is logged via an <a href="https://www.matthewcassinelli.com/actions/append-to-file/">Append to File</a> action pointed toward a directory specified by the user at installation.</p>
+<p><img alt="DriveyQR" src="https://user-images.githubusercontent.com/43663476/151585842-b13f5ab1-c130-496f-845c-973ba471fe86.png"></p>
+</div>
+</div>
+<hr>
+<div class="latest-release">
+<h4 class="title is-4">Latest Release Notes</h4>
+<p><strong>1.0 - Jan. 28, 2022, 7:13 p.m.</strong></p>
+<p>Initial release.</p>
+<br>
+</div>
+<hr>
+<div class="feedback">
+<h4 class="title is-4">Feedback</h4>
+<br>
+<p>No feedback yet</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</body>
+</html>
